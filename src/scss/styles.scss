@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://use.typekit.net/cyr0xpl.css");
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_responsive-mixins.scss";
+@import "gallery.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+a {
+  all: unset;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+a {
+  color: $main-black !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: $main-black !important;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  padding-top: 150px;
+  @include responsive("mobToWeb") {
+    padding-top: 20px;
+  }
+}
+
+.header {
+  @include main-font;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  font-size: 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  @include responsive("mobToWeb") {
+    padding: 5px 17px;
+    font-size: 10px;
+  }
+  @include responsive("max") {
+    padding: 50px 140px;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+    @include responsive("mobToWeb") {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  div {
+    padding: 5px 0px;
+  }
+  .header__column {
+    display: flex;
+    width: 33%;
+    div {
+      cursor: pointer;
+    }
+
+    &:nth-child(2) {
+      justify-content: center;
+    }
+    &:last-child {
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  i {
+    padding-right: 12px;
+    font-size: 1rem;
+  }
+}
+
+.shrinkHeader {
+  padding: 5px 50px;
+  transition: 0.2s ease-in-out;
+  font-size: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  @include responsive("mobToWeb") {
+    padding: 5px 17px;
+  }
+  @include responsive("max") {
+    padding: 5px 140px;
+  }
+}
+
+.shrinkImg {
+  width: 50px !important;
+  height: 50px !important;
+  img {
+    width: 50px !important;
+    height: 50px !important;
+    transition: 0.1s ease-in-out;
+    padding: 0px 5px !important;
+    @include responsive("mobToWeb") {
+      width: 40px;
+      height: 40px !important;
+      padding: 5px;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  @include responsive("mobToWeb") {
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .banner {
+    @include sub-font;
+    color: white;
+    position: relative;
+    padding: 0px 50px;
+    margin-bottom: 80px;
+    img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+    }
+    @include banner-css(rgb(255, 255, 255), $main-black);
+    @include responsive("mobNtab") {
+      padding: 0px;
+      position: static;
+      @include banner-css($main-black, white);
+    }
+    @include responsive("web01") {
+      padding: 0px;
+    }
+    @include responsive("max") {
+      padding: 0px 140px 0px 140px;
+    }
+    .banner__desc {
+      @include responsive("webToMax") {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      @include responsive("web01") {
+        font-size: 2rem;
+      }
+      padding: 25px 15px !important;
+      font-weight: 500;
+    }
+  }
+  .studio {
+    img {
+      object-fit: cover;
+    }
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    @include card-css;
+    .card__title {
+      font-weight: 600 !important;
+      font-size: 12px !important;
+    }
+    @include responsive("mobToWeb") {
+      padding: 80px 0px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+    @include responsive("max") {
+      padding: 80px 140px;
+    }
+    button {
+      margin-top: 50px;
+      border: 1px solid black;
+      width: 295px;
+      height: 55px;
+      @include responsive("mobile") {
+        width: 270px;
+      }
+      @include main-font;
+      display: grid;
+      grid-template-columns: 8fr 1fr;
+      align-items: center;
+      @include transition($main-black, white);
+      &:hover {
+        .arrow-btn {
+          border: none;
+          color: $main-black;
+        }
+      }
+      .book-btn {
+        justify-self: flex-start;
+        padding: 10px 25px;
+      }
+      .arrow-btn {
+        border-left: 1px solid $main-black;
+        justify-self: center;
+        font-size: 20px;
+        padding: 12.5px 20px;
+      }
+    }
+  }
+  .shop {
+    padding: 80px 50px;
+    width: 100%;
+    .shop__header {
+      @include header-css("small");
+    }
+    @include responsive("max") {
+      padding: 80px 140px;
+    }
+    @include responsive("mobile") {
+      padding: 80px 40px;
+    }
+    .carousel-indicators li {
+      background-color: black;
+    }
+    .prod__list {
+      padding-top: 40px;
+      @include responsive("webToMax") {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        width: 100%;
+      }
+      @include responsive("tablet") {
+        padding: 50px;
+      }
+      @include responsive("mobile") {
+        padding: 20px 0px;
+      }
+      .prod__item {
+        .prod__img {
+          display: flex;
+          justify-content: center;
+        }
+        @include responsive("webToMax") {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+        }
+        img {
+          width: 100px;
+          object-fit: scale-down;
+          margin: 30px;
+          margin-bottom: 50px;
+        }
+        .prod__desc {
+          @include main-font;
+          width: 100%;
+          background-color: white;
+          @include responsive("mobNtab") {
+            padding-bottom: 10px;
+          }
+        }
+        .carousel-caption {
+          position: relative !important;
+          left: auto !important;
+          right: auto !important;
+          background-color: white;
+        }
+        .prod__type {
+          color: black;
+        }
+        .prod__name {
+          @include sub-font;
+          font-size: 25px;
+          padding: 10px 0px;
+        }
+        .more-btn {
+          @include main-font;
+          margin-top: 15px;
+          padding: 7% 25%;
+          border: 1px solid black;
+          color: black;
+          @include responsive("mobNtab") {
+            padding: 20px 30%;
+          }
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: $main-black;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .web {
+    .web__header {
+      @include header-css("small");
+      padding-bottom: 40px;
+      .header__desc {
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+    padding: 80px 50px;
+    .card__section {
+      .wes {
+        img {
+          padding: 30px 0px;
+          @include responsive("mobToWeb") {
+            padding: 30px;
+          }
+        }
+      }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      align-self: center;
+      @include card-css;
+      .card__img {
+        &:first-child {
+          padding: 30px;
+        }
+      }
+      @include responsive("mobToWeb") {
+        padding: 80px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        .order:nth-of-type(3) {
+          order: 3;
+        }
+        .order:nth-of-type(4) {
+          order: 2;
+        }
+        .order:nth-of-type(5) {
+          order: 4;
+        }
+        .order:nth-of-type(6) {
+          order: 5;
+        }
+      }
+      @include responsive("web01") {
+        padding: 40px 50px;
+      }
+      @include responsive("max") {
+        padding: 40px 140px;
+      }
+      .card__content .card__title {
+        @include sub-font;
+        font-size: 14px;
+      }
+      .card__btn {
+        @include main-font;
+        padding: 3% 25px 0px 25px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        div {
+          display: flex;
+          align-items: center;
+        }
+        &:hover {
+          i {
+            transform: translateX(5px);
+          }
+        }
+        i {
+          transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+          font-size: 15px;
+          padding: 3px 3px 4px 10px;
+        }
+      }
+    }
+  }
+
+  .photo-list {
+    padding: 80px 50px;
+    @include responsive("mobNtab") {
+      padding: 80px 0px;
+    }
+    @include responsive("web01") {
+      padding: 80px 0px;
+    }
+    @include responsive("max") {
+      padding: 80px 140px;
+    }
+    .insta {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr;
+      @include responsive("mobNtab") {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      div {
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.15s linear;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.5;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  @include main-font;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: $beige;
+  padding: 0px 30px;
+  margin-top: 50px;
+  @include responsive("mobNtab") {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0px 30px;
+    .nav__column {
+      padding: 35px;
+
+      &:nth-of-type(1) {
+        order: 1;
+      }
+      &:nth-of-type(2) {
+        order: 0;
+      }
+      &:nth-of-type(3) {
+        order: 2;
+      }
+    }
+  }
+  .nav__column:nth-child(2) {
+    padding: 0px 33%;
+    border-right: 1px solid $main-black;
+    border-left: 1px solid $main-black;
+    @include responsive("mobNtab") {
+      border: none;
+      padding: 35px 30%;
+    }
+  }
+  @include responsive("mobNtab") {
+    .nav__column:first-child {
+      border-top: 1px solid $main-black;
+      border-bottom: 1px solid $main-black;
+      padding: 35px 20%;
+    }
+  }
+  .nav__title {
+    margin-bottom: 25px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .nav__list {
+    padding: 7px 0px;
+    width: max-content;
+    margin: auto;
+    cursor: pointer;
+  }
+}
+
+.italic {
+  @include italic-font;
+}
+
+.transparent {
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  &:before {
+    content: "\00a0";
+  }
+}
+
+.none {
+  display: none !important;
+}

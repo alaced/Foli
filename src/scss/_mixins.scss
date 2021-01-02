@@ -1,0 +1,176 @@
+@mixin main-font {
+  font-family: proxima-nova, sans-serif;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  color: #414141;
+}
+
+@mixin sub-font {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.025em;
+  text-transform: initial;
+  font-weight: 300;
+  color: #4d4c4c;
+  @include responsive("mobile") {
+    letter-spacing: 0.5px;
+  }
+}
+
+@mixin italic-font {
+  font-family: freight-display-pro, serif;
+  font-style: italic;
+}
+
+@mixin banner-css($color01, $color02) {
+  .banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate3d(-50%, -50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include responsive("mobNtab") {
+      position: static;
+      transform: none;
+      display: block;
+      padding: 40px 20px;
+      margin: auto;
+    }
+    .banner__title {
+      @include main-font;
+      color: $color01;
+      padding-bottom: 2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      @include responsive("mobNtab") {
+        font-size: 10px;
+      }
+    }
+    .banner__desc {
+      color: $color01;
+      font-size: 2.7rem;
+      padding: 10px 0px;
+      font-weight: 300;
+      line-height: 3.1rem;
+      @include responsive("mobNtab") {
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+      }
+      @include responsive("web01") {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+      }
+    }
+    .banner__btn {
+      @include main-font;
+      padding: 20px 55px;
+      margin-top: 3%;
+      background-color: inherit;
+      color: $color01;
+      font-weight: 500;
+      border: 1px solid $color01;
+      &:hover {
+        cursor: pointer;
+        background-color: $color01;
+        color: $color02;
+        transition: all 0.2s ease-in-out;
+      }
+      @include responsive("mobNtab") {
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+@mixin card-css {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card__image {
+    height: 100%;
+    width: 100%;
+  }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: $beige;
+    padding: 40px 0px;
+    @include responsive("mobNtab") {
+      padding: 40px 20px;
+    }
+    .card__title {
+      @include main-font;
+      padding-bottom: 5%;
+      @include responsive("tablet") {
+        padding-bottom: 3%;
+      }
+      @include responsive("web01") {
+        padding-bottom: 3%;
+      }
+    }
+    .card__desc {
+      @include sub-font;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.7);
+      line-height: 2.5rem;
+      padding: 0px 20px;
+      letter-spacing: 1px;
+      @include responsive("mobile") {
+        max-width: 450px;
+      }
+      @include responsive("mobToWeb") {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+      }
+    }
+  }
+}
+
+@mixin header-css($size) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .header__title {
+    @include main-font;
+    padding: 0px 20px 30px 20px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .header__desc {
+    @include sub-font;
+    text-align: center;
+    @if ($size == "big") {
+      font-size: 38px;
+    } @else if ($size == "small") {
+      font-size: 33px;
+    }
+    @include responsive("mobToWeb") {
+      line-height: 2.1rem;
+      @if ($size == "big") {
+        font-size: 30px;
+      } @else if ($size == "small") {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@mixin transition($color01, $color02) {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: $color01;
+    color: $color02;
+  }
+}

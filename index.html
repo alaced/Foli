@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Foli</title>
+  </head>
+  <body>
+    <div class="header js-header">
+      <div class="header__column">
+        <div class="button menuBtn"><i class="fas fa-bars"></i></div>
+      
+      </div>
+      <div class="header__column logo">
+        <a href="index.html"><img src="images/logoAK.svg" /></a>
+      </div>
+      <div class="header__column">
+        <div class="button js-gallery">Gallery</div>
+      </div>
+    </div>
+    <main>
+      <div class="banner">
+        <div class="banner__img">
+          <img src="images/01.jpg" />
+        </div>
+        <div class="banner__content">
+          <div class="banner__title">Kyoungmin Kim</div>
+          <div class="banner__desc">What makes softwares </br>better?</div>
+          <button class="banner__btn">Explore more</button>
+        </div>
+      </div>
+      <div class="studio" data-aos="fade-in" data-aos-duration="1000">
+        <div class="card__image">
+          <img src="images/hello.jpg" />
+        </div>
+        <div class="card__content">
+          <div class="card__title">Introduction</div>
+          <div class="card__desc">All about me</div>
+          <button class="card__btn">
+            <div class="book-btn">Find out</div>
+            <div class="arrow-btn"><i class="fas fa-angle-right"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="shop" data-aos="fade-in" data-aos-duration="1000">
+        <div class="shop__header">
+          <div class="header__title">Intership</div>
+          <div class="header__desc">Materials made by AmyKim</div>
+        </div>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel"
+          data-ride="carousel"
+          data-interval="false"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="prod__list">
+            <div class="prod__item active">
+              <div class="prod__img">
+                <img class="prod__img01" src="images/doc01.png" />
+              </div>
+              <div class="prod__desc">
+                <div class="prod__type">Research</div>
+                <div class="prod__name">SaaS Company 2019</div>
+                <a href="src/SaaS BM_20190716_(AmyKim).pdf"><button class="more-btn more01">See more</button></a>
+              </div>
+            </div>
+            <div class="prod__item">
+              <div class="prod__img">
+                <img class="prod__img02" src="images/manual01.png" />
+              </div>
+              <div class="prod__desc">
+                <div class="prod__type">Manual</div>
+                <div class="prod__name">PMS Admin Manual</div>
+                <a href="src/Admin_manual_v.1.0_190919(AmyKim).pdf"><button class="more-btn more02">See more</button></a>
+              </div>
+            </div>
+            <div class="prod__item">
+              <div class="prod__img">
+                <img class="prod__img03" src="images/test01.png" />
+              </div>
+              <div class="prod__desc">
+                <div class="prod__type">Test Case</div>
+                <div class="prod__name">Test Case</div>
+                <a href="https://docs.google.com/spreadsheets/d/1U7-_rDB1eEdiENmRTAHDlLS7i62eRsKiGXH3h1aYMec/edit?usp=sharing"><button class="more-btn more03">See more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="web">
+        <div class="web__header">
+          <div class="header__title">Web</div>
+          <div class="header__desc">Web publishing <span>(feat. Nomad Coders)</span></div>
+        </div>
+        <div class="card__section">
+          <div
+           class="card__image order wes"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            <img src="images/hotel01.png" />
+          </div>
+          <div
+          class="card__content order"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+          >
+            <div class="card__title">July, 2020</div>
+            <div class="card__desc">KakaoTalk Clone: inspired by <span class="italic">The Grand Budapest Hotel</span>.</div>
+            <button class="card__btn">
+            <a href="https://alaced.github.io/kakao_clone_2020/"><div>Explore more<i class="fas fa-long-arrow-alt-right"></i></div></a>
+            </button>
+          </div>
+          <div
+           class="card__content order"
+           data-aos="fade-in"
+           data-aos-duration="1500"
+          >
+            <div class="card__title">Oct, 2020</div>
+            <div class="card__desc">Momentum Clone: to-do list with html, css, and vanilla javascript.</div>
+            <button class="card__btn">
+            <a href="https://alaced.github.io/momentom_2020_js/"><div>Explore more<i class="fas fa-long-arrow-alt-right"></i></div></a>
+            </button>
+          </div>
+          <div
+            class="card__image order"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            <img src="images/todo.jpg" />
+          </div>
+          <div
+            class="card__image order"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            <img src="images/story04.webp" />
+          </div>
+          <div
+            class="card__content order"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            <div class="card__title">Dec, 2020</div>
+            <div class="card__desc">CSS Layout Project: layout practice with scss</div>
+            <button class="card__btn">
+             <a href="https://alaced.github.io/scss-grid/"><div>Explore more<i class="fas fa-long-arrow-alt-right"></i></div></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="photo-list" data-aos="fade-in" data-aos-duration="1500">
+        <div class="insta">
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum01.webp" /></a>
+          </div>
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum02.webp" /></a>
+          </div>
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum03.webp" /></a>
+          </div>
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum04.webp" /></a>
+          </div>
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum05.webp" /></a>
+          </div>
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum06.webp" /></a>
+          </div>
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum07.webp" /></a>
+          </div>
+          <div class="instagram-photo">
+            <a href="gallery.html"><img src="images/thum08.webp" /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav>
+      <div class="nav__column">
+        <div class="nav__title">Support</div>
+        <div class="nav__list">F.A.Q</div>
+        <div class="nav__list">Privacy Policy</div>
+        <div class="nav__list">Terms and Conditions</div>
+        <div class="nav__list">Accessibility</div>
+      </div>
+      <div class="nav__column">
+        <div class="nav__title">Follow Us</div>
+        <div class="nav__list">Instagram</div>
+        <div class="nav__list">Pinterest</div>
+        <div class="nav__list">Facebook</div>
+        <div class="nav__list">Newsletter</div>
+      </div>
+      <div class="nav__column">
+        <div class="nav__title">Paintbox</div>
+        <div class="nav__list">Our Studios</div>
+        <div class="nav__list">Careers</div>
+        <div class="nav__list">Press</div>
+        <div class="nav__list">Contact Us</div>
+      </div>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/841cfaa0da.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
