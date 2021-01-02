@@ -81,7 +81,7 @@
         transition: all 0.2s ease-in-out;
       }
       @include responsive("mobNtab") {
-        margin-top: 10%;
+        margin-top: 30px;
       }
     }
   }
@@ -126,6 +126,7 @@
       line-height: 2.5rem;
       padding: 0px 20px;
       letter-spacing: 1px;
+      max-width: 400px;
       @include responsive("mobile") {
         max-width: 450px;
       }
@@ -145,7 +146,7 @@
     @include main-font;
     padding: 0px 20px 30px 20px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.9rem;
   }
   .header__desc {
     @include sub-font;

@@ -51,13 +51,12 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
-
   @include responsive("mobToWeb") {
     padding: 5px 17px;
     font-size: 10px;
   }
   @include responsive("max") {
-    padding: 50px 140px;
+    padding: 30px 140px;
   }
   .logo {
     width: 90px;
@@ -71,8 +70,13 @@ body {
       height: 90px;
     }
     @include responsive("mobToWeb") {
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
+      padding-top: 10px !important;
+      img {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
   div {
@@ -119,17 +123,21 @@ body {
 }
 
 .shrinkImg {
-  width: 50px !important;
-  height: 50px !important;
+  width: 40px !important;
+  height: 40px !important;
   img {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     transition: 0.1s ease-in-out;
     padding: 0px 5px !important;
-    @include responsive("mobToWeb") {
-      width: 40px;
+  }
+  @include responsive("mobToWeb") {
+    width: 40px;
+    height: 40px !important;
+    padding: 5px !important;
+    img {
+      width: 40px !important;
       height: 40px !important;
-      padding: 5px;
     }
   }
 }
@@ -172,6 +180,60 @@ main {
       }
       padding: 25px 15px !important;
       font-weight: 500;
+    }
+    .motive {
+      display: none;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      margin: 0px 50px;
+      padding: 70px 70px;
+      font-size: 0.9rem;
+      flex-direction: column;
+      justify-content: center;
+      @include responsive("mobNtab") {
+        margin: 55px 0px 0px 0px;
+        font-size: 0.8rem;
+        padding: 50px 30px;
+      }
+      @include responsive("mobile") {
+        font-size: 0.7rem;
+      }
+      @include responsive("web01") {
+        margin: 0px;
+        padding: 55px 40px 10px 40px;
+        font-size: 0.85rem;
+      }
+      @include responsive("max") {
+        margin: 0px 140px 0px 140px;
+        padding: 70px 90px;
+      }
+      .close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        font-size: 1.5rem;
+        color: white;
+        @include responsive("mobNtab") {
+          font-size: 1.3rem;
+          right: 15px;
+        }
+        @include responsive("mobile") {
+          right: 10px;
+        }
+
+        @include responsive("web02") {
+          top: 30px;
+          right: 40px;
+        }
+        @include responsive("max") {
+          top: 30px;
+          right: 40px;
+        }
+      }
     }
   }
   .studio {
@@ -315,7 +377,6 @@ main {
       }
     }
   }
-
   .web {
     .web__header {
       @include header-css("small");
@@ -375,7 +436,7 @@ main {
       }
       .card__btn {
         @include main-font;
-        padding: 3% 25px 0px 25px;
+        padding: 30px 25px 0px 25px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -396,7 +457,6 @@ main {
       }
     }
   }
-
   .photo-list {
     padding: 80px 50px;
     @include responsive("mobNtab") {
@@ -413,6 +473,7 @@ main {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr 1fr;
+      gap: 1px;
       @include responsive("mobNtab") {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -507,4 +568,8 @@ nav {
 
 .none {
   display: none !important;
+}
+
+.flex {
+  display: flex !important;
 }

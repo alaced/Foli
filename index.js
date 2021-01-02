@@ -1,9 +1,6 @@
-const header = document.querySelector(".js-header"),
-  logoImg = document.querySelector(".logo"),
-  headerBtn = document.querySelectorAll(".button"),
-  galleryBtn = document.querySelector(".js-gallery"),
-  menuBtn = document.querySelector(".menuBtn"),
-  hideMe = document.querySelectorAll(".hide-me"),
+const exploreBtn = document.querySelector(".js-exploreBtn"),
+  motiveTab = document.querySelector(".js-motive"),
+  closeBtn = document.querySelector(".js-close"),
   carousel = document.querySelectorAll(".carousel"),
   prodList = document.querySelectorAll(".prod__list"),
   prodItem = document.querySelectorAll(".prod__item"),
@@ -17,28 +14,18 @@ const header = document.querySelector(".js-header"),
   more02 = document.querySelector(".more02"),
   more03 = document.querySelector(".more03");
 
-window.addEventListener("scroll", scrollHandler);
+exploreBtn.addEventListener("click", function (e) {
+  motiveTab.classList.remove("none");
+  motiveTab.classList.add("flex");
+});
+closeBtn.addEventListener("click", function (e) {
+  motiveTab.classList.add("none");
+  motiveTab.classList.remove("flex");
+});
 
-function scrollHandler(event) {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    logoImg.classList.add("shrinkImg");
-    header.classList.add("shrinkHeader");
-  } else {
-    header.classList.remove("shrinkHeader");
-    logoImg.classList.remove("shrinkImg");
-  }
-}
-let headerSize = window.matchMedia("(max-width: 1025px)");
-function resizeHeader() {
-  if (headerSize.matches) {
-    galleryBtn.classList.add("none");
-  } else {
-    galleryBtn.classList.remove("none");
-  }
-}
-resizeHeader();
-
-headerSize.addEventListener("change", resizeHeader);
+more01.addEventListener("mouseenter", function (e) {
+  prodImg01.setAttribute("src", "images/doc02.png");
+});
 
 let carouselSize = window.matchMedia("(max-width: 700px)");
 function carouselHandler() {
