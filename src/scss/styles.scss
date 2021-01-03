@@ -164,6 +164,7 @@ main {
       padding: 0px;
       position: static;
       @include banner-css($main-black, white);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068);
     }
     @include responsive("web01") {
       padding: 0px;
@@ -183,10 +184,10 @@ main {
     }
     .motive {
       display: none;
-      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
+      height: 100%;
       background-color: rgba(0, 0, 0, 0.9);
       margin: 0px 50px;
       padding: 70px 70px;
@@ -300,6 +301,9 @@ main {
     @include responsive("mobile") {
       padding: 80px 40px;
     }
+    @include responsive("mobNtab") {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068);
+    }
     .carousel-indicators li {
       background-color: black;
     }
@@ -388,8 +392,13 @@ main {
       }
     }
     padding: 80px 50px;
+    @include responsive("mobNtab") {
+      padding: 80px 0px;
+    }
     .card__section {
       .wes {
+        border: 1px solid rgba(0, 0, 0, 0.085);
+        border-bottom: none;
         img {
           padding: 30px 0px;
           @include responsive("mobToWeb") {
