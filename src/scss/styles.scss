@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Gaegu:wght@300;400&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://use.typekit.net/cyr0xpl.css");
 @import "_reset.scss";
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "_responsive-mixins.scss";
 @import "gallery.scss";
+@import "motive.scss";
+@import "intro.scss";
 
 * {
   box-sizing: border-box;
@@ -70,12 +72,12 @@ body {
       height: 90px;
     }
     @include responsive("mobToWeb") {
-      width: 40px;
-      height: 40px;
-      padding-top: 10px !important;
+      width: 50px;
+      height: 50px;
+      padding-top: 20px !important;
       img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
       }
     }
   }
@@ -123,22 +125,22 @@ body {
 }
 
 .shrinkImg {
-  width: 40px !important;
-  height: 40px !important;
+  width: 50px !important;
+  height: 50px !important;
   img {
-    width: 40px !important;
-    height: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
     transition: 0.1s ease-in-out;
     padding: 0px 5px !important;
   }
   @include responsive("mobToWeb") {
-    width: 40px;
-    height: 40px !important;
+    // width: 50px;
+    // height: 50px !important;
     padding: 5px !important;
-    img {
-      width: 40px !important;
-      height: 40px !important;
-    }
+    // img {
+    //   width: 40px !important;
+    //   height: 40px !important;
+    // }
   }
 }
 
@@ -237,7 +239,7 @@ main {
       }
     }
   }
-  .studio {
+  .intro {
     img {
       object-fit: cover;
     }
@@ -254,6 +256,9 @@ main {
       padding: 80px 0px;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
+    }
+    @include responsive("web01") {
+      padding: 80px 50px;
     }
     @include responsive("max") {
       padding: 80px 140px;
@@ -289,11 +294,11 @@ main {
       }
     }
   }
-  .shop {
+  .internship {
     padding: 80px 50px;
     width: 100%;
-    .shop__header {
-      @include header-css("small");
+    .content__header {
+      @include header-css;
     }
     @include responsive("max") {
       padding: 80px 140px;
@@ -307,7 +312,7 @@ main {
     .carousel-indicators li {
       background-color: black;
     }
-    .prod__list {
+    .content__list {
       padding-top: 40px;
       @include responsive("webToMax") {
         display: grid;
@@ -322,8 +327,8 @@ main {
       @include responsive("mobile") {
         padding: 20px 0px;
       }
-      .prod__item {
-        .prod__img {
+      .content__item {
+        .content__img {
           display: flex;
           justify-content: center;
         }
@@ -340,7 +345,7 @@ main {
           margin: 30px;
           margin-bottom: 50px;
         }
-        .prod__desc {
+        .content__desc {
           @include main-font;
           width: 100%;
           background-color: white;
@@ -354,10 +359,10 @@ main {
           right: auto !important;
           background-color: white;
         }
-        .prod__type {
+        .content__type {
           color: black;
         }
-        .prod__name {
+        .content__name {
           @include sub-font;
           font-size: 25px;
           padding: 10px 0px;
@@ -383,7 +388,7 @@ main {
   }
   .web {
     .web__header {
-      @include header-css("small");
+      @include header-css;
       padding-bottom: 40px;
       .header__desc {
         span {
@@ -396,6 +401,11 @@ main {
       padding: 80px 0px;
     }
     .card__section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      align-self: center;
+      @include card-css;
       .wes {
         border: 1px solid rgba(0, 0, 0, 0.085);
         border-bottom: none;
@@ -406,18 +416,13 @@ main {
           }
         }
       }
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      align-self: center;
-      @include card-css;
       .card__img {
         &:first-child {
           padding: 30px;
         }
       }
       @include responsive("mobToWeb") {
-        padding: 80px 0px;
+        padding: 40px 0px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         .order:nth-of-type(3) {
@@ -432,9 +437,6 @@ main {
         .order:nth-of-type(6) {
           order: 5;
         }
-      }
-      @include responsive("web01") {
-        padding: 40px 50px;
       }
       @include responsive("max") {
         padding: 40px 140px;
@@ -477,7 +479,7 @@ main {
     @include responsive("max") {
       padding: 80px 140px;
     }
-    .insta {
+    .photos {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -514,7 +516,7 @@ nav {
   justify-items: center;
   justify-content: space-evenly;
   text-align: center;
-  background-color: $beige;
+  background-color: $blue;
   padding: 0px 30px;
   margin-top: 50px;
   @include responsive("mobNtab") {
@@ -581,4 +583,9 @@ nav {
 
 .flex {
   display: flex !important;
+}
+
+.underline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+  cursor: pointer;
 }
