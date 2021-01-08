@@ -3,6 +3,12 @@
   @include responsive("mobile") {
     padding: 20px 20px;
   }
+  @include responsive("tablet") {
+    padding: 20px 70px;
+  }
+  @include responsive("max") {
+    padding: 20px 140px;
+  }
   .motive__desc {
     width: 70%;
     padding: 0px 50px;
@@ -30,11 +36,15 @@
       display: flex;
       justify-content: center;
       width: 95%;
-      max-height: 450px;
+      max-height: 350px;
       margin: 20px auto;
       object-fit: cover;
       @include responsive("mobNtab") {
         margin: 15px auto;
+        max-height: 300px;
+      }
+      @include responsive("max") {
+        max-height: 430px;
       }
     }
     .article {

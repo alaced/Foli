@@ -4,9 +4,11 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "_responsive-mixins.scss";
+@import "header.scss";
 @import "gallery.scss";
 @import "motive.scss";
 @import "intro.scss";
+@import "materials.scss";
 
 * {
   box-sizing: border-box;
@@ -37,110 +39,6 @@ body {
   padding-top: 150px;
   @include responsive("mobToWeb") {
     padding-top: 20px;
-  }
-}
-
-.header {
-  @include main-font;
-  padding: 30px 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  font-size: 12px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  @include responsive("mobToWeb") {
-    padding: 5px 17px;
-    font-size: 10px;
-  }
-  @include responsive("max") {
-    padding: 30px 140px;
-  }
-  .logo {
-    width: 90px;
-    height: 90px;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    img {
-      width: 90px;
-      height: 90px;
-    }
-    @include responsive("mobToWeb") {
-      width: 50px;
-      height: 50px;
-      padding-top: 20px !important;
-      img {
-        width: 50px;
-        height: 50px;
-      }
-    }
-  }
-  div {
-    padding: 5px 0px;
-  }
-  .header__column {
-    display: flex;
-    width: 33%;
-    div {
-      cursor: pointer;
-    }
-
-    &:nth-child(2) {
-      justify-content: center;
-    }
-    &:last-child {
-      justify-content: flex-end;
-      display: flex;
-      align-items: center;
-    }
-  }
-  .button {
-    display: flex;
-    align-items: center;
-    padding: 10px 0px;
-  }
-  i {
-    padding-right: 12px;
-    font-size: 1rem;
-  }
-}
-
-.shrinkHeader {
-  padding: 5px 50px;
-  transition: 0.2s ease-in-out;
-  font-size: 10px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  @include responsive("mobToWeb") {
-    padding: 5px 17px;
-  }
-  @include responsive("max") {
-    padding: 5px 140px;
-  }
-}
-
-.shrinkImg {
-  width: 50px !important;
-  height: 50px !important;
-  img {
-    width: 50px !important;
-    height: 50px !important;
-    transition: 0.1s ease-in-out;
-    padding: 0px 5px !important;
-  }
-  @include responsive("mobToWeb") {
-    // width: 50px;
-    // height: 50px !important;
-    padding: 5px !important;
-    // img {
-    //   width: 40px !important;
-    //   height: 40px !important;
-    // }
   }
 }
 
@@ -181,7 +79,7 @@ main {
       @include responsive("web01") {
         font-size: 2rem;
       }
-      padding: 25px 15px !important;
+      padding: 35px 30px !important;
       font-weight: 500;
     }
     .motive {
@@ -213,30 +111,6 @@ main {
         margin: 0px 140px 0px 140px;
         padding: 70px 90px;
       }
-      .close {
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 20px;
-        font-size: 1.5rem;
-        color: white;
-        @include responsive("mobNtab") {
-          font-size: 1.3rem;
-          right: 15px;
-        }
-        @include responsive("mobile") {
-          right: 10px;
-        }
-
-        @include responsive("web02") {
-          top: 30px;
-          right: 40px;
-        }
-        @include responsive("max") {
-          top: 30px;
-          right: 40px;
-        }
-      }
     }
   }
   .intro {
@@ -256,9 +130,15 @@ main {
       padding: 80px 0px;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
+      .card__desc {
+        font-size: 1.5rem !important;
+      }
     }
     @include responsive("web01") {
       padding: 80px 50px;
+      .card__desc {
+        font-size: 1.7rem !important;
+      }
     }
     @include responsive("max") {
       padding: 80px 140px;
@@ -364,7 +244,7 @@ main {
         }
         .content__name {
           @include sub-font;
-          font-size: 25px;
+          font-size: 1.3rem;
           padding: 10px 0px;
         }
         .more-btn {

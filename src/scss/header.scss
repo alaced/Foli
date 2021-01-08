@@ -1,0 +1,150 @@
+.header {
+  @include main-font;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  font-size: 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  @include responsive("mobToWeb") {
+    padding: 5px 17px;
+    font-size: 10px;
+  }
+  @include responsive("max") {
+    padding: 30px 140px;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+    @include responsive("mobToWeb") {
+      width: 50px;
+      height: 50px;
+      padding-top: 20px !important;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  div {
+    padding: 5px 0px;
+  }
+  .header__column {
+    display: flex;
+    width: 33%;
+    div {
+      cursor: pointer;
+    }
+    &:first-child {
+      .button {
+        padding: 10px 0px;
+        &:first-child {
+          margin-right: 40px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      justify-content: center;
+    }
+    &:last-child {
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      .button {
+        padding: 10px 0px;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  i {
+    padding-right: 12px;
+    font-size: 1rem;
+  }
+}
+
+.shrinkHeader {
+  padding: 5px 50px;
+  transition: 0.2s ease-in-out;
+  font-size: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  @include responsive("mobToWeb") {
+    padding: 5px 17px;
+  }
+  @include responsive("max") {
+    padding: 5px 140px;
+  }
+}
+
+.shrinkImg {
+  width: 50px !important;
+  height: 50px !important;
+  img {
+    width: 50px !important;
+    height: 50px !important;
+    transition: 0.1s ease-in-out;
+    padding: 0px 5px !important;
+  }
+  @include responsive("mobToWeb") {
+    padding: 5px !important;
+  }
+}
+
+.menu {
+  font-family: proxima-nova, sans-serif;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 2.5rem;
+  }
+  .menu__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.719);
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    @include responsive("mobNtab") {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    a {
+      background-color: inherit;
+    }
+  }
+}

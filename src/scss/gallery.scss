@@ -9,13 +9,16 @@
   @include responsive("max") {
     padding: 40px 140px;
   }
-  @include header-css("small");
-
+  @include header-css;
+  .header__title {
+    font-size: 1.3rem;
+  }
   .gallery__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     grid-template-rows: auto;
     gap: 10px;
+    padding-bottom: 40px;
     .photo {
       width: 100%;
       max-height: 500px;

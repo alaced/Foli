@@ -1,13 +1,13 @@
 .resume {
   font-family: "Noto Sans KR", sans-serif;
-  margin: 50px;
+  margin: 10px 50px 50px 50px;
   padding: 50px;
-  box-shadow: 0 6px 9px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 9px 3px rgba(0, 0, 0, 0.1);
   @include responsive("max") {
     margin: 50px 140px;
   }
   @include responsive("mobNtab") {
-    margin: 0px;
+    margin-top: 50px;
     padding: 30px;
   }
   @include responsive("mobile") {
@@ -17,6 +17,7 @@
   @include responsive("web01") {
     padding: 30px;
     margin: 40px;
+    margin-top: 50px;
   }
   .resume__title {
     display: flex;
@@ -39,6 +40,12 @@
         justify-content: center;
         letter-spacing: 2.5px;
         font-weight: 500;
+        @include responsive("mobNtab") {
+          font-size: 2.3rem;
+          span {
+            font-size: 1rem;
+          }
+        }
         span {
           font-size: 1.5rem;
         }
