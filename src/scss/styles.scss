@@ -348,7 +348,7 @@ main {
       }
     }
   }
-  .photo-list {
+  .interests {
     padding: 80px 50px;
     @include responsive("mobNtab") {
       padding: 80px 0px;
@@ -358,6 +358,10 @@ main {
     }
     @include responsive("max") {
       padding: 80px 140px;
+    }
+    .interest__header {
+      @include header-css;
+      padding-bottom: 40px;
     }
     .photos {
       width: 100%;
