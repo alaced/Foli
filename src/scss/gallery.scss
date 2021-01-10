@@ -1,10 +1,10 @@
 .gallery {
-  padding: 40px 50px;
+  padding: 40px 50px 140px 50px;
   @include responsive("mobNtab") {
-    padding: 40px 0px;
+    padding: 40px 0px 140px 0px;
   }
   @include responsive("web01") {
-    padding: 50px 0px;
+    padding: 50px 0px 140px 0px;
   }
   @include responsive("max") {
     padding: 40px 140px;
@@ -18,7 +18,7 @@
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     grid-template-rows: auto;
     gap: 10px;
-    padding-bottom: 50px;
+
     .photo {
       width: 100%;
       max-height: 500px;

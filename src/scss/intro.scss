@@ -12,7 +12,7 @@
   }
   @include responsive("mobile") {
     padding: 25px;
-    margin: 0px;
+    margin: 50px 0px;
   }
   @include responsive("web01") {
     padding: 30px;
@@ -33,6 +33,11 @@
           width: 100%;
         }
       }
+      @include responsive("mobile") {
+        &:last-child {
+          display: block;
+        }
+      }
       .name {
         font-size: 2.8rem;
         display: flex;
@@ -45,6 +50,9 @@
           span {
             font-size: 1rem;
           }
+        }
+        @include responsive("mobile") {
+          align-items: center;
         }
         span {
           font-size: 1.5rem;
@@ -60,7 +68,13 @@
           justify-content: center;
           font-size: 0.7rem;
           border-right: 1px solid rgba(0, 0, 0, 0.2);
-
+          @include responsive("mobile") {
+            padding-right: 0px;
+            border: none;
+            div {
+              justify-content: center;
+            }
+          }
           div {
             padding: 3px 0px;
             display: flex;
@@ -83,14 +97,17 @@
       justify-content: center;
       padding-left: 30px;
       img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         object-fit: cover;
         @include responsive("mobNtab") {
-          width: 100px;
-          height: 100px;
+          width: 90px;
+          height: 90px;
         }
+      }
+      @include responsive("mobile") {
+        padding: 30px 0px;
       }
     }
   }
@@ -246,6 +263,9 @@
         align-items: center;
         @include responsive("web01") {
           margin: 3px;
+        }
+        @include responsive("mobile") {
+          margin: 0px;
         }
         img {
           width: 35px;

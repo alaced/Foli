@@ -15,26 +15,30 @@
   </head>
   <body>
     <div class="menu js-menu">
-      <div class="close js-close">X</div>
+      <div class="close js-close"><i class="fas fa-times"></i></div>
       <div class="menu__list">
         <a href="intro.html"><div class="menu__item">About</div></a>
         <a href="materials.html"><div class="menu__item">Materials</div></a>
+        <a href="motive.html"><div class="menu__item">Journal</div></a>
         <a href="gallery.html"><div class="menu__item">Gallery</div></a>
       </div>
     </div>
     <div class="header js-header">
       <div class="header__column">
         <div class="button menuBtn"><i class="fas fa-bars"></i></div>
-        <a href="intro.html"><div class="button headerBtn">About</div></a>
+        <a href="intro.html"><div class="button js-headerBtn">About</div></a>
         <a href="materials.html"
-          ><div class="button headerBtn">Materials</div></a
+          ><div class="button js-headerBtn">Materials</div></a
         >
       </div>
       <div class="header__column logo">
         <a href="index.html"><img src="images/logoAK.svg" /></a>
       </div>
       <div class="header__column">
-        <a href="gallery.html"><div class="button js-gallery">Gallery</div></a>
+        <a href="motive.html"><div class="button js-headerBtn">Journal</div></a>
+        <a href="gallery.html"
+          ><div class="button js-headerBtn">Gallery</div></a
+        >
       </div>
     </div>
     <main>
@@ -43,27 +47,29 @@
         <div class="gallery__content">
           <div class="photo"><img src="images/gallery/01.webp" /></div>
           <div class="photo"><img src="images/gallery/02.webp" /></div>
-          <div class="photo"><img src="images/gallery/03.webp" /></div>
           <div class="photo"><img src="images/gallery/04.webp" /></div>
           <div class="photo"><img src="images/gallery/05.webp" /></div>
           <div class="photo"><img src="images/gallery/06.webp" /></div>
           <div class="photo"><img src="images/gallery/07.webp" /></div>
-          <div class="photo"><img src="images/gallery/08.webp" /></div>
-          <div class="photo"><img src="images/gallery/09.webp" /></div>
           <div class="photo"><img src="images/gallery/10.webp" /></div>
           <div class="photo"><img src="images/gallery/11.webp" /></div>
-          <div class="photo"><img src="images/gallery/12.webp" /></div>
-          <div class="photo"><img src="images/gallery/13.webp" /></div>
+          <div class="photo" id="newyork01">
+            <img src="images/gallery/12.webp" />
+          </div>
+          <div class="photo" id="newyork04">
+            <img src="images/gallery/13.webp" />
+          </div>
           <div class="photo"><img src="images/gallery/14.webp" /></div>
-          <div class="photo"><img src="images/gallery/15.webp" /></div>
+          <div class="photo" id="newyork03">
+            <img src="images/gallery/15.webp" />
+          </div>
           <div class="photo"><img src="images/gallery/16.webp" /></div>
-          <div class="photo"><img src="images/gallery/17.webp" /></div>
-          <div class="photo"><img src="images/gallery/18.webp" /></div>
           <div class="photo"><img src="images/gallery/19.webp" /></div>
           <div class="photo"><img src="images/gallery/20.webp" /></div>
           <div class="photo"><img src="images/gallery/21.webp" /></div>
-          <div class="photo"><img src="images/gallery/22.webp" /></div>
-          <div class="photo"><img src="images/gallery/23.webp" /></div>
+          <div class="photo" id="newyork02">
+            <img src="images/gallery/22.webp" />
+          </div>
           <div class="photo"><img src="images/gallery/24.webp" /></div>
         </div>
       </div>
@@ -75,7 +81,9 @@
           <div class="photo"><img src="images/gallery/ru/03.webp" /></div>
           <div class="photo"><img src="images/gallery/ru/04.webp" /></div>
           <div class="photo"><img src="images/gallery/ru/05.webp" /></div>
-          <div class="photo"><img src="images/gallery/ru/06.webp" /></div>
+          <div class="photo" id="russia02">
+            <img src="images/gallery/ru/06.webp" />
+          </div>
           <div class="photo"><img src="images/gallery/ru/07.webp" /></div>
           <div class="photo"><img src="images/gallery/ru/08.webp" /></div>
           <div class="photo"><img src="images/gallery/ru/09.webp" /></div>
@@ -85,13 +93,15 @@
           <div class="photo"><img src="images/gallery/ru/13.webp" /></div>
           <div class="photo"><img src="images/gallery/ru/14.webp" /></div>
           <div class="photo"><img src="images/gallery/ru/15.webp" /></div>
-          <div class="photo"><img src="images/gallery/ru/16.webp" /></div>
+          <div class="photo" id="russia01">
+            <img src="images/gallery/ru/16.webp" />
+          </div>
           <div class="photo"><img src="images/gallery/ru/17.webp" /></div>
           <div class="photo"><img src="images/gallery/ru/18.webp" /></div>
         </div>
       </div>
       <div class="gallery">
-        <div class="header__title">Boracay</div>
+        <div class="header__title" id="boracay">Boracay</div>
         <div class="gallery__content">
           <div class="photo"><img src="images/gallery/bo/01.webp" /></div>
           <div class="photo"><img src="images/gallery/bo/02.webp" /></div>
@@ -105,8 +115,12 @@
           <div class="photo"><img src="images/gallery/bo/10.webp" /></div>
           <div class="photo"><img src="images/gallery/bo/11.webp" /></div>
           <div class="photo"><img src="images/gallery/bo/12.webp" /></div>
-          <div class="photo"><img src="images/gallery/bo/13.webp" /></div>
-          <div class="photo"><img src="images/gallery/bo/14.webp" /></div>
+          <div class="photo" id="bor02">
+            <img src="images/gallery/bo/13.webp" />
+          </div>
+          <div class="photo" id="bor01">
+            <img src="images/gallery/bo/14.webp" />
+          </div>
           <div class="photo"><img src="images/gallery/bo/15.webp" /></div>
           <div class="photo"><img src="images/gallery/bo/16.webp" /></div>
           <div class="photo"><img src="images/gallery/bo/17.webp" /></div>
@@ -116,21 +130,21 @@
     </main>
     <nav>
       <div class="nav__column">
-        <div class="nav__title">Support</div>
+        <div class="nav__title">This</div>
         <div class="nav__list">F.A.Q</div>
         <div class="nav__list">Privacy Policy</div>
         <div class="nav__list">Terms and Conditions</div>
         <div class="nav__list">Accessibility</div>
       </div>
       <div class="nav__column">
-        <div class="nav__title">Follow Us</div>
+        <div class="nav__title">is</div>
         <div class="nav__list">Instagram</div>
         <div class="nav__list">Pinterest</div>
         <div class="nav__list">Facebook</div>
         <div class="nav__list">Newsletter</div>
       </div>
       <div class="nav__column">
-        <div class="nav__title">Paintbox</div>
+        <div class="nav__title">Fake</div>
         <div class="nav__list">Our Studios</div>
         <div class="nav__list">Careers</div>
         <div class="nav__list">Press</div>
