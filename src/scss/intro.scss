@@ -109,6 +109,7 @@
       }
     }
     .selfie {
+      // display: none;
       display: flex;
       justify-content: center;
       padding-left: 30px;
@@ -131,178 +132,204 @@
       }
     }
   }
-}
-.resume__row {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  padding: 30px 50px;
-  gap: 100px;
-  @include responsive("web01") {
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-  }
-  @include responsive("mobNtab") {
-    grid-template-columns: 1fr;
-    gap: 80px;
-    padding: 40px 30px;
-  }
-  @include responsive("max") {
-    gap: 120px;
-    padding: 30px 70px;
-  }
-  .section {
-    .sec__title {
-      @include main-font;
-      font-size: 1.5rem;
-      font-weight: 700;
-      padding: 5px 0px;
-      padding-bottom: 10px;
-      @include responsive("web01") {
-        font-size: 1.3rem;
-      }
-      @include responsive("mobNtab") {
-        font-size: 1.1rem;
-      }
+  .resume__row {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    padding: 30px 50px;
+    gap: 100px;
+    @include responsive("web01") {
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
     }
-  }
-  @include resume;
-  .profile {
-    .sec__desc {
-      padding-top: 10px;
-      line-height: 1.3rem;
+    @include responsive("mobNtab") {
+      grid-template-columns: 1fr;
+      gap: 80px;
+      padding: 40px 30px;
     }
-  }
-  .edu {
-    .edu__desc {
-      padding: 10px 0px;
-      .location {
-        font-size: 0.7rem;
-      }
+    @include responsive("max") {
+      gap: 120px;
+      padding: 30px 70px;
     }
-  }
-  .skill {
-    .sec__desc {
-      padding-top: 10px;
-    }
-    .skill__wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-    .skill__item {
-      display: flex;
-      align-items: center;
-      .skill__icon {
-        min-width: 70px;
+    .section {
+      .sec__title {
+        @include main-font;
+        font-size: 1.5rem;
+        font-weight: 700;
         padding: 5px 0px;
+        padding-bottom: 10px;
+        @include responsive("web01") {
+          font-size: 1.3rem;
+        }
+        @include responsive("mobNtab") {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    @include resume;
+    .profile {
+      .sec__desc {
+        padding-top: 10px;
+        line-height: 1.3rem;
+      }
+    }
+    .edu {
+      .edu__desc {
+        padding: 10px 0px;
+        .location {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .skill {
+      .sec__desc {
+        padding-top: 10px;
+      }
+      .skill__wrapper {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+      }
+      .skill__item {
+        display: flex;
         align-items: center;
+        .skill__icon {
+          min-width: 70px;
+          padding: 5px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 30px;
+            margin: 5px;
+          }
+          .icon__title {
+            @include main-font;
+            font-size: 0.6rem;
+            letter-spacing: 1px;
+          }
+        }
+        .gage {
+          padding-left: 15px;
+          img {
+            width: 6px;
+            height: 30px;
+            margin: 0px 1px;
+            @include responsive("mobile") {
+              width: 6px;
+            }
+          }
+        }
+      }
+      .award {
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        position: relative;
         img {
           width: 30px;
-          margin: 5px;
+          cursor: pointer;
         }
-        .icon__title {
-          @include main-font;
-          font-size: 0.6rem;
-          letter-spacing: 1px;
+
+        &:hover {
+          .nomad {
+            opacity: 1;
+          }
+        }
+        .nomad {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+          position: absolute;
+          width: 80px;
+          top: -25px;
+          left: -15px;
+          font-size: 0.5rem;
+          text-align: center;
+          padding: 5px;
+          padding-bottom: 12px;
+          background: no-repeat center url("../../images/intro/bubble.png");
+          background-size: 80px 45px;
         }
       }
-      .gage {
-        padding-left: 15px;
-        img {
-          width: 6px;
-          height: 30px;
-          margin: 0px 1px;
+    }
+    .experience {
+      .exp__desc {
+        padding: 10px 0px;
+        .exp__date {
+          font-size: 0.8rem;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          list-style: square inside;
+          line-height: 1.5rem;
+        }
+      }
+    }
+    .certificates {
+      .certi__desc {
+        padding: 10px 0px;
+
+        .certi__date {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .interests {
+      .sec__desc {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        .interests__icon {
+          padding: 13px 17px;
+          margin: 0px 10px;
+          border-radius: 50%;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include responsive("web01") {
+            margin: 3px;
+          }
           @include responsive("mobile") {
-            width: 6px;
+            margin: 0px;
+          }
+          img {
+            width: 35px;
+            padding-bottom: 5px;
+          }
+          .icon__title {
+            display: flex;
+            justify-content: center;
+            @include main-font;
+            font-size: 0.6rem;
           }
         }
       }
     }
-    .award {
-      padding: 0px 10px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      img {
-        width: 30px;
-        cursor: pointer;
-      }
-
-      &:hover {
-        .nomad {
-          opacity: 1;
-        }
-      }
-      .nomad {
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        position: absolute;
-        width: 80px;
-        top: -25px;
-        left: -15px;
-        font-size: 0.5rem;
-        text-align: center;
-        padding: 5px;
-        padding-bottom: 12px;
-        background: no-repeat center url("../../images/intro/bubble.png");
-        background-size: 80px 45px;
-      }
-    }
   }
-  .experience {
-    .exp__desc {
-      padding: 10px 0px;
-      .exp__date {
-        font-size: 0.8rem;
-      }
-      ul {
-        display: flex;
-        flex-direction: column;
-        list-style: square inside;
-        line-height: 1.5rem;
-      }
-    }
-  }
-  .certificates {
-    .certi__desc {
-      padding: 10px 0px;
-
-      .certi__date {
-        font-size: 0.8rem;
-      }
-    }
-  }
-  .interests {
-    .sec__desc {
-      display: flex;
-      justify-content: center;
-      padding-top: 10px;
-      .interests__icon {
-        padding: 13px 17px;
-        margin: 0px 10px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include responsive("web01") {
-          margin: 3px;
-        }
-        @include responsive("mobile") {
-          margin: 0px;
-        }
-        img {
-          width: 35px;
-          padding-bottom: 5px;
-        }
-        .icon__title {
-          display: flex;
-          justify-content: center;
-          @include main-font;
-          font-size: 0.6rem;
-        }
-      }
-    }
-  }
+  // position: relative;
+  // .link {
+  //   position: absolute;
+  //   bottom: 20px;
+  //   right: 20px;
+  //   width: 200px;
+  //   padding: 10px 20px;
+  //   text-align: center;
+  //   background-color: $dark-blue;
+  //   border-radius: 10px;
+  //   font-size: 0.9rem;
+  //   margin-top: 20px;
+  //   cursor: pointer;
+  //   font-weight: 600;
+  //   div {
+  //     color: white;
+  //   }
+  //   a {
+  //     all: unset;
+  //   }
+  //   span {
+  //     font-size: 0.7rem;
+  //     font-weight: 400;
+  //     color: white;
+  //   }
+  // }
 }

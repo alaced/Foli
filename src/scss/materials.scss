@@ -124,12 +124,12 @@
       grid-template-columns: 1fr;
     }
     .sec__info {
-      background-color: rgba(1, 54, 106, 0.575);
+      background-color: $dark-blue;
       color: white;
       border: none;
     }
     .sec__content {
-      border: 1px solid rgba(1, 54, 106, 0.575);
+      border: 1px solid $dark-blue;
     }
     &::before {
       display: flex;
