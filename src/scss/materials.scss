@@ -13,12 +13,6 @@
     @include main-font;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    // &:nth-child(even) {
-    //   .sec__info {
-    //     order: 1;
-    //   }
-    //   grid-template-columns: 2fr 1fr;
-    // }
     @include responsive("mobToMat") {
       grid-template-rows: 0.6fr 1fr;
       grid-template-columns: 1fr;
