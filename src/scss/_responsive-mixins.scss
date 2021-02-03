@@ -10,6 +10,8 @@ $minMax: 1275px;
 $maxMax: 3000px;
 $matMin: 700px;
 $matMax: 900px;
+$minPad: 900px;
+$maxPad: 1025px;
 
 @mixin responsive($device) {
   @if $device == "mobile" {
@@ -50,6 +52,10 @@ $matMax: 900px;
     }
   } @else if $device == "mobToMat" {
     @media screen and (min-width: $minMobile) and (max-width: $matMax) {
+      @content;
+    }
+  } @else if $device == "pad" {
+    @media screen and (min-width: $minPad) and (max-width: $maxPad) {
       @content;
     }
   }

@@ -143,6 +143,11 @@ main {
     @include responsive("max") {
       padding: 80px 140px;
     }
+    @include responsive("mobile") {
+      .card__desc {
+        font-size: 1.3rem !important;
+      }
+    }
     button {
       margin-top: 50px;
       border: 1px solid black;
@@ -156,13 +161,9 @@ main {
       grid-template-columns: 8fr 1fr;
       align-items: center;
       @include transition($main-black, white);
-      &:hover {
-        .arrow-btn {
-          border: none;
-          color: $main-black;
-        }
-      }
-      .book-btn {
+      transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+        color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      .find-btn {
         justify-self: flex-start;
         padding: 10px 25px;
       }
@@ -280,6 +281,9 @@ main {
     @include responsive("mobNtab") {
       padding: 80px 0px;
     }
+    @include responsive("max") {
+      padding: 40px 140px;
+    }
     .card__section {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -318,32 +322,40 @@ main {
           order: 5;
         }
       }
-      @include responsive("max") {
-        padding: 40px 140px;
-      }
-      .card__content .card__title {
-        @include sub-font;
-        font-size: 14px;
-      }
-      .card__btn {
-        @include main-font;
-        padding: 30px 25px 0px 25px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        div {
-          display: flex;
-          align-items: center;
+
+      .card__content {
+        .card__title {
+          @include sub-font;
+          font-size: 14px;
         }
-        &:hover {
-          i {
-            transform: translateX(5px);
+        .card__desc {
+          @include responsive("pad") {
+            max-width: 600px;
+          }
+          @include responsive("tablet") {
+            max-width: 500px;
           }
         }
-        i {
-          transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
-          font-size: 15px;
-          padding: 3px 3px 4px 10px;
+        .card__btn {
+          @include main-font;
+          padding: 30px 25px 0px 25px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          div {
+            display: flex;
+            align-items: center;
+          }
+          &:hover {
+            i {
+              transform: translateX(5px);
+            }
+          }
+          i {
+            transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+            font-size: 15px;
+            padding: 3px 3px 4px 10px;
+          }
         }
       }
     }
