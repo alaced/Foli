@@ -137,7 +137,7 @@ main {
     @include responsive("web01") {
       padding: 80px 50px;
       .card__desc {
-        font-size: 1.7rem !important;
+        font-size: 1.5rem !important;
       }
     }
     @include responsive("max") {
