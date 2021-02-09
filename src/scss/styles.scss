@@ -213,6 +213,7 @@ main {
         .content__img {
           display: flex;
           justify-content: center;
+          max-height: 180px;
         }
         @include responsive("webToMax") {
           display: flex;
@@ -231,8 +232,11 @@ main {
           @include main-font;
           width: 100%;
           background-color: white;
-          @include responsive("mobNtab") {
+          @include responsive("tablet") {
             padding-bottom: 10px;
+          }
+          @include responsive("mobile") {
+            padding-bottom: 20px;
           }
         }
         .carousel-caption {
@@ -256,7 +260,7 @@ main {
           border: 1px solid black;
           color: black;
           @include responsive("mobNtab") {
-            padding: 20px 30%;
+            padding: 20px 80px;
           }
           transition: all 0.2s ease-in-out;
           &:hover {
