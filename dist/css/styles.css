@@ -151,7 +151,7 @@ table {
   width: 100%;
   z-index: 100;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   .header {
     padding: 5px 17px;
     font-size: 10px;
@@ -174,7 +174,7 @@ table {
   width: 90px;
   height: 90px;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   .header .logo {
     width: 50px;
     height: 50px;
@@ -227,7 +227,7 @@ table {
   font-size: 10px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   .shrinkHeader {
     padding: 5px 17px;
   }
@@ -248,7 +248,7 @@ table {
   transition: 0.1s ease-in-out;
   padding: 0px 5px !important;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   .shrinkImg {
     padding: 5px !important;
   }
@@ -289,7 +289,7 @@ table {
   letter-spacing: 2px;
   cursor: pointer;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .menu .menu__item {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -305,7 +305,7 @@ table {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .gallery {
     padding: 40px 0px 140px 0px;
   }
@@ -341,15 +341,15 @@ table {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .gallery .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   .gallery .header__desc {
     line-height: 2.1rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 .gallery .header__title {
@@ -357,7 +357,7 @@ table {
 }
 .gallery .gallery__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-template-rows: auto;
   gap: 10px;
 }
@@ -374,7 +374,7 @@ table {
 .motive {
   padding: 20px 40px;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .motive {
     padding: 20px 20px;
   }
@@ -402,7 +402,7 @@ table {
     padding: 30px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .motive .motive__desc {
     width: 100%;
     padding: 0px;
@@ -414,7 +414,7 @@ table {
   font-size: 1.7rem;
   padding: 20px 0px 5px 0px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .motive .motive__desc .motive__title {
     font-size: 1.5rem;
   }
@@ -423,7 +423,7 @@ table {
   font-size: 1rem;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .motive .motive__desc .motive__subtitle {
     font-size: 0.8rem;
   }
@@ -436,7 +436,7 @@ table {
   margin: 20px auto;
   object-fit: cover;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .motive .motive__desc img {
     margin: 15px auto;
     max-height: 300px;
@@ -455,17 +455,18 @@ table {
 }
 .motive .motive__desc .article span {
   display: flex;
+  padding-bottom: 10px;
   justify-content: center;
   font-size: 1.6rem;
   font-family: "Gaegu", cursive;
   line-height: 2.8rem;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .motive .motive__desc .article span {
     font-size: 1.4rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .motive .motive__desc .article {
     padding: 30px 0px;
   }
@@ -502,7 +503,7 @@ table {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .resume {
     padding-bottom: 25px;
     margin: 50px 0px;
@@ -522,13 +523,13 @@ table {
   background-color: #bedcf4;
   padding: 50px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__title {
     flex-direction: column;
     padding: 30px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .resume .resume__title {
     padding: 30px 0px 0px 0px;
   }
@@ -541,12 +542,12 @@ table {
 .resume .resume__title .title__column {
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__title .title__column div {
     width: 100%;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .resume .resume__title .title__column:last-child {
     display: block;
   }
@@ -562,7 +563,7 @@ table {
 .resume .resume__title .title__column .name span {
   font-size: 1.5rem;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__title .title__column .name {
     padding-bottom: 30px;
     font-size: 1.65rem;
@@ -571,7 +572,7 @@ table {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .resume .resume__title .title__column .name {
     align-items: center;
   }
@@ -596,7 +597,7 @@ table {
   font-size: 0.7rem;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .resume .resume__title .title__column .contact__wrapper .contact {
     padding-right: 0px;
     border: none;
@@ -630,7 +631,7 @@ table {
   border-radius: 50%;
   object-fit: cover;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__title .selfie img {
     width: 90px;
     height: 90px;
@@ -642,7 +643,7 @@ table {
     height: 100px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   .resume .resume__title .selfie {
     padding: 30px 0px;
   }
@@ -660,7 +661,7 @@ table {
     gap: 80px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__row {
     grid-template-columns: 1fr;
     gap: 80px;
@@ -690,12 +691,12 @@ table {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__row .section .sec__title {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__row {
     font-size: 0.7rem;
   }
@@ -706,7 +707,7 @@ table {
   font-size: 1.1rem;
   padding-bottom: 5px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   .resume .resume__row .resu__title {
     font-size: 0.9rem;
   }
@@ -722,6 +723,7 @@ table {
 .resume .resume__row .resu__desc {
   display: flex;
   justify-content: space-between;
+  word-break: keep-all;
 }
 .resume .resume__row .profile .sec__desc {
   padding-top: 10px;
@@ -736,12 +738,21 @@ table {
 .resume .resume__row .skill .sec__desc {
   padding-top: 10px;
 }
+.resume .resume__row .skill .skill__group {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .resume .resume__row .skill .skill__group {
+    flex-wrap: wrap;
+  }
+}
 .resume .resume__row .skill .skill__wrapper {
   display: flex;
   justify-content: space-between;
 }
 .resume .resume__row .skill .skill__item {
-  display: flex;
   align-items: center;
 }
 .resume .resume__row .skill .skill__item .skill__icon {
@@ -764,19 +775,8 @@ table {
   color: #414141;
   font-size: 0.6rem;
   letter-spacing: 1px;
-}
-.resume .resume__row .skill .skill__item .gage {
-  padding-left: 15px;
-}
-.resume .resume__row .skill .skill__item .gage img {
-  width: 6px;
-  height: 30px;
-  margin: 0px 1px;
-}
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  .resume .resume__row .skill .skill__item .gage img {
-    width: 6px;
-  }
+  justify-content: center;
+  margin-top: 5px;
 }
 .resume .resume__row .skill .award {
   padding: 0px 10px;
@@ -796,8 +796,8 @@ table {
   transition: opacity 0.3s ease-in-out;
   position: absolute;
   width: 80px;
-  top: -25px;
-  left: -15px;
+  top: -35px;
+  left: 0px;
   font-size: 0.5rem;
   text-align: center;
   padding: 5px;
@@ -810,6 +810,8 @@ table {
 }
 .resume .resume__row .experience .exp__desc .exp__date {
   font-size: 0.8rem;
+  align-items: end;
+  justify-items: center;
 }
 .resume .resume__row .experience .exp__desc ul {
   display: flex;
@@ -823,65 +825,32 @@ table {
 .resume .resume__row .certificates .certi__desc .certi__date {
   font-size: 0.8rem;
 }
-.resume .resume__row .interests .sec__desc {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+.resume .resume__row .training .training_desc {
+  padding: 10px 0px;
 }
-.resume .resume__row .interests .sec__desc .interests__icon {
-  padding: 13px 17px;
-  margin: 0px 10px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (min-width: 700px) and (max-width: 1025px) {
-  .resume .resume__row .interests .sec__desc .interests__icon {
-    margin: 3px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  .resume .resume__row .interests .sec__desc .interests__icon {
-    margin: 0px;
-  }
-}
-.resume .resume__row .interests .sec__desc .interests__icon img {
-  width: 35px;
-  padding-bottom: 5px;
-}
-.resume .resume__row .interests .sec__desc .interests__icon .icon__title {
-  display: flex;
-  justify-content: center;
-  font-family: proxima-nova, sans-serif;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: #414141;
-  font-size: 0.6rem;
+.resume .resume__row .training .training__date {
+  font-size: 0.8rem;
 }
 
-.materials {
+.resources {
   padding: 40px 50px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  .materials {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  .resources {
     padding: 40px 0px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  .materials {
+  .resources {
     padding: 50px 0px;
   }
 }
 @media screen and (min-width: 1275px) and (max-width: 3000px) {
-  .materials {
+  .resources {
     padding: 40px 140px;
   }
 }
-.materials .section {
+.resources .section {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -891,35 +860,36 @@ table {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-@media screen and (min-width: 320px) and (max-width: 900px) {
-  .materials .section {
+@media screen and (min-width: 285px) and (max-width: 900px) {
+  .resources .section {
     grid-template-rows: 0.6fr 1fr;
     grid-template-columns: 1fr;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  .materials .section {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  .resources .section {
     grid-template-rows: 0.3fr 1fr;
   }
 }
-.materials .section .sec__info {
+.resources .section .sec__info {
   display: flex;
+  padding: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(230, 240, 250);
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-.materials .section .sec__info .sec__title {
+.resources .section .sec__info .sec__title {
   font-size: 1.4rem;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  .materials .section .sec__info .sec__title {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  .resources .section .sec__info .sec__title {
     font-size: 1.1rem;
   }
 }
-.materials .section .sec__info .sec__desc {
+.resources .section .sec__info .sec__desc {
   width: 60%;
   letter-spacing: 1px;
   line-height: 1.4rem;
@@ -928,96 +898,104 @@ table {
   word-wrap: break-word;
   font-size: 0.85rem;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  .materials .section .sec__info .sec__desc {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  .resources .section .sec__info .sec__desc {
     font-size: 0.8rem;
   }
 }
-.materials .section .sec__content {
+.resources .section .sec__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px 0px;
-  border: 1px solid rgb(230, 240, 250);
-  border-top: none;
+  border-top: 1px solid rgb(230, 240, 250);
   align-items: center;
 }
-.materials .section .sec__content .card {
+.resources .section .sec__content .card {
   padding: 25px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  .materials .section .sec__content .card {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  .resources .section .sec__content .card {
     padding: 20px;
   }
 }
-.materials .section .sec__content .card .card__content {
-  padding: 20px 10px 0px 10px;
+.resources .section .sec__content .card .card__content {
+  padding: 20px 10px;
   max-width: 155px;
   text-align: center;
   cursor: pointer;
-  border: 1px solid rgb(244.8, 244.8, 244.8);
-  box-shadow: 0px 2px 0 rgb(242.25, 242.25, 242.25), 2px 4px 6px rgb(249.9, 249.9, 249.9);
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 3%;
+  box-shadow: 0px 2px 0 rgb(240, 240, 240), 2px 4px 6px rgb(245, 245, 245);
   font-weight: 900;
   letter-spacing: 1px;
-  transition: all 150ms linear;
+  transition: all 200ms linear;
 }
-.materials .section .sec__content .card .card__content:hover {
-  background: rgb(251.175, 251.175, 251.175);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+.resources .section .sec__content .card .card__content:hover {
+  background: rgba(255, 255, 255, 0.985);
+  border: 1px solid rgb(197, 197, 197);
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
-  color: rgb(45.9, 45.9, 45.9);
+  color: rgb(46, 46, 46);
   text-decoration: none;
-  text-shadow: -2px -2px 0 rgb(230.775, 230.775, 230.775);
-  transition: all 250ms linear;
+  transition: all 100ms linear;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  .materials .section .sec__content .card .card__content {
-    max-width: 150px;
+.resources .section .sec__content .card .card__content:hover .card__title {
+  text-shadow: -2px -2px 0 rgb(230, 230, 230);
+}
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  .resources .section .sec__content .card .card__content {
+    padding: 20px 5px;
   }
 }
-.materials .section .sec__content .card .card__content .card__img {
+.resources .section .sec__content .card .card__content .card__img {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   max-height: 100px;
 }
-.materials .section .sec__content .card .card__content .card__img img {
+.resources .section .sec__content .card .card__content .card__img img {
   width: 60%;
 }
-.materials .section .sec__content .card .card__content .card__title {
-  padding: 10px;
+.resources .section .sec__content .card .card__content .divider {
+  width: 90%;
+  height: 1px;
+  background-color: rgb(236, 234, 234);
+  margin: 10px auto;
+}
+.resources .section .sec__content .card .card__content .card__title {
+  padding: 0px 5px 10px 5px;
   letter-spacing: 0.5px;
-  height: 2.5rem;
+  min-height: 2.5rem;
+  font-size: 0.8rem;
+  line-height: 1.1;
 }
-.materials .section .plan .card,
-.materials .section .manual .card {
-  padding: 25px 0px;
+.resources .section .sec__content .card .card__content .card__desc {
+  font-weight: 400;
+  line-height: 1.3;
+  word-break: keep-all;
 }
-.materials .section .plan .equal,
-.materials .section .manual .equal {
-  font-size: 2.2rem;
-  padding: 15px;
-  padding-right: 11px;
+.resources .section .no-border {
+  border-top: none;
 }
-.materials .test {
+.resources .test {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 0.3fr 1fr;
 }
-@media screen and (min-width: 320px) and (max-width: 900px) {
-  .materials .test {
+@media screen and (min-width: 285px) and (max-width: 900px) {
+  .resources .test {
     grid-template-rows: 0.3fr 0.6fr 1fr;
     grid-template-columns: 1fr;
   }
 }
-.materials .test .sec__info {
+.resources .test .sec__info {
   background-color: rgba(1, 54, 106, 0.575);
   color: white;
   border: none;
 }
-.materials .test .sec__content {
+.resources .test .sec__content {
   border: 1px solid rgba(1, 54, 106, 0.575);
 }
-.materials .test::before {
+.resources .test::before {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1027,8 +1005,8 @@ table {
   content: "\f078";
   grid-column: span 2;
 }
-@media screen and (min-width: 320px) and (max-width: 900px) {
-  .materials .test::before {
+@media screen and (min-width: 285px) and (max-width: 900px) {
+  .resources .test::before {
     grid-column: span 1;
   }
 }
@@ -1076,7 +1054,7 @@ body {
   width: 100%;
   padding-top: 150px;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   body {
     padding-top: 20px;
   }
@@ -1085,7 +1063,7 @@ body {
 main {
   width: 100%;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   main {
     padding: 0px;
     margin-top: 30px;
@@ -1102,7 +1080,7 @@ main .banner {
   padding: 0px 50px;
   margin-bottom: 80px;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .banner {
     letter-spacing: 0.5px;
   }
@@ -1111,6 +1089,12 @@ main .banner img {
   width: 100%;
   max-height: 600px;
   object-fit: cover;
+  opacity: 0.75;
+}
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .banner img {
+    opacity: 1;
+  }
 }
 main .banner .banner__content {
   position: absolute;
@@ -1123,7 +1107,7 @@ main .banner .banner__content {
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content {
     position: static;
     transform: none;
@@ -1144,7 +1128,7 @@ main .banner .banner__content .banner__title {
   font-size: 0.9rem;
   font-weight: 600;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__title {
     font-size: 0.8rem;
     padding-bottom: 1rem;
@@ -1157,13 +1141,13 @@ main .banner .banner__content .banner__desc {
   font-weight: 300;
   line-height: 3.1rem;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.9rem;
     line-height: 2.4rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.3rem;
   }
@@ -1187,19 +1171,19 @@ main .banner .banner__content .banner__btn {
   color: rgb(255, 255, 255);
   font-weight: 500;
   border: 1px solid rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
 }
 main .banner .banner__content .banner__btn:hover {
   cursor: pointer;
   background-color: rgb(255, 255, 255);
   color: #414141;
-  transition: all 0.2s ease-in-out;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__btn {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner {
     padding: 0px;
     position: static;
@@ -1217,7 +1201,7 @@ main .banner .banner__content .banner__btn:hover {
     text-align: center;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content {
     position: static;
     transform: none;
@@ -1226,7 +1210,7 @@ main .banner .banner__content .banner__btn:hover {
     margin: auto;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__title {
     font-family: proxima-nova, sans-serif;
     letter-spacing: 2.2px;
@@ -1240,13 +1224,13 @@ main .banner .banner__content .banner__btn:hover {
     font-weight: 600;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__title {
     font-size: 0.8rem;
     padding-bottom: 1rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__desc {
     color: #414141;
     font-size: 2.7rem;
@@ -1255,24 +1239,24 @@ main .banner .banner__content .banner__btn:hover {
     line-height: 3.1rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.9rem;
     line-height: 2.4rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 500px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 700px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 700px) and (max-width: 1025px) {
   main .banner .banner__content .banner__desc {
     font-size: 2.2rem;
     line-height: 2.8rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__btn {
     font-family: proxima-nova, sans-serif;
     letter-spacing: 2.2px;
@@ -1286,15 +1270,15 @@ main .banner .banner__content .banner__btn:hover {
     color: #414141;
     font-weight: 500;
     border: 1px solid #414141;
+    transition: all 0.2s ease-in-out;
   }
   main .banner .banner__content .banner__btn:hover {
     cursor: pointer;
     background-color: #414141;
     color: white;
-    transition: all 0.2s ease-in-out;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
   main .banner .banner__content .banner__btn {
     margin-top: 30px;
   }
@@ -1309,13 +1293,19 @@ main .banner .banner__content .banner__btn:hover {
     padding: 0px 140px 0px 140px;
   }
 }
+@media screen and (min-width: 700px) and (max-width: 3000px) {
+  main .banner .banner__title {
+    -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+  }
+}
 main .banner .banner__desc {
   padding: 35px 30px !important;
   font-weight: 500;
 }
 @media screen and (min-width: 700px) and (max-width: 3000px) {
   main .banner .banner__desc {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-text-stroke: 0.3px black;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
@@ -1336,14 +1326,14 @@ main .banner .motive {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .banner .motive {
     margin: 55px 0px 0px 0px;
     font-size: 0.8rem;
     padding: 50px 30px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .banner .motive {
     font-size: 0.7rem;
   }
@@ -1388,7 +1378,7 @@ main .intro .card__content {
   background-color: rgb(230, 240, 250);
   padding: 40px 0px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .intro .card__content {
     padding: 40px 20px;
   }
@@ -1416,18 +1406,18 @@ main .intro .card__content .card__desc {
   letter-spacing: 1px;
   max-width: 400px;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .intro .card__content .card__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   main .intro .card__content .card__desc {
     font-size: 1.3rem;
     line-height: 2.2rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .intro .card__content .card__desc {
     max-width: 450px;
     font-size: 1.1rem;
@@ -1438,7 +1428,7 @@ main .intro .card__title {
   font-weight: 600 !important;
   font-size: 12px !important;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   main .intro {
     padding: 80px 0px;
     grid-template-columns: 1fr;
@@ -1461,7 +1451,7 @@ main .intro .card__title {
     padding: 80px 140px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .intro .card__desc {
     font-size: 1.3rem !important;
   }
@@ -1483,7 +1473,7 @@ main .intro button {
   transition: all 0.3s ease-in-out;
   transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .intro button {
     width: 270px;
   }
@@ -1503,16 +1493,16 @@ main .intro button .arrow-btn {
   font-size: 20px;
   padding: 12.5px 20px;
 }
-main .internship {
+main .experience {
   padding: 80px 50px;
   width: 100%;
 }
-main .internship .content__header {
+main .experience .content__header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .internship .content__header .header__title {
+main .experience .content__header .header__title {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -1523,7 +1513,7 @@ main .internship .content__header .header__title {
   font-weight: 600;
   font-size: 0.9rem;
 }
-main .internship .content__header .header__desc {
+main .experience .content__header .header__desc {
   width: 80%;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.025em;
@@ -1533,69 +1523,86 @@ main .internship .content__header .header__desc {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .internship .content__header .header__desc {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .experience .content__header .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
-  main .internship .content__header .header__desc {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
+  main .experience .content__header .header__desc {
     line-height: 2.1rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 1275px) and (max-width: 3000px) {
-  main .internship {
+  main .experience {
     padding: 80px 140px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .internship {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .experience {
     padding: 80px 40px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  main .internship {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .experience {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068);
   }
 }
-main .internship .carousel-indicators li {
+main .experience .content__more-btn {
+  font-family: proxima-nova, sans-serif;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #414141;
+  padding-top: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+main .experience .content__more-btn div {
+  color: blue;
+}
+main .experience .carousel-indicators li {
   background-color: black;
 }
-main .internship .content__list {
+main .experience .content__list {
   padding-top: 40px;
 }
 @media screen and (min-width: 700px) and (max-width: 3000px) {
-  main .internship .content__list {
+  main .experience .content__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     justify-items: center;
     width: 100%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  main .internship .content__list {
-    gap: 5px;
+  main .experience .content__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
-  main .internship .content__list {
+  main .experience .content__list {
     padding: 50px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .internship .content__list {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .experience .content__list {
     padding: 20px 0px;
   }
 }
-main .internship .content__list .content__item .content__img {
+main .experience .content__list .content__item .content__img {
   display: flex;
   justify-content: center;
   max-height: 180px;
 }
 @media screen and (min-width: 700px) and (max-width: 3000px) {
-  main .internship .content__list .content__item {
+  main .experience .content__list .content__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1603,13 +1610,13 @@ main .internship .content__list .content__item .content__img {
     width: 100%;
   }
 }
-main .internship .content__list .content__item img {
+main .experience .content__list .content__item img {
   width: 100px;
   object-fit: scale-down;
   margin: 30px;
   margin-bottom: 50px;
 }
-main .internship .content__list .content__item .content__desc {
+main .experience .content__list .content__item .content__desc {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -1620,25 +1627,25 @@ main .internship .content__list .content__item .content__desc {
   background-color: white;
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
-  main .internship .content__list .content__item .content__desc {
+  main .experience .content__list .content__item .content__desc {
     padding-bottom: 10px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .internship .content__list .content__item .content__desc {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .experience .content__list .content__item .content__desc {
     padding-bottom: 20px;
   }
 }
-main .internship .content__list .content__item .carousel-caption {
+main .experience .content__list .content__item .carousel-caption {
   position: relative !important;
   left: auto !important;
   right: auto !important;
   background-color: white;
 }
-main .internship .content__list .content__item .content__type {
+main .experience .content__list .content__item .content__type {
   color: black;
 }
-main .internship .content__list .content__item .content__name {
+main .experience .content__list .content__item .content__name {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.025em;
   text-transform: initial;
@@ -1647,17 +1654,17 @@ main .internship .content__list .content__item .content__name {
   font-size: 1.2rem;
   padding: 10px 0px;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .internship .content__list .content__item .content__name {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .experience .content__list .content__item .content__name {
     letter-spacing: 0.5px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
-  main .internship .content__list .content__item .content__name {
+  main .experience .content__list .content__item .content__name {
     font-size: 1.3rem;
   }
 }
-main .internship .content__list .content__item .more-btn {
+main .experience .content__list .content__item .more-btn {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -1665,36 +1672,33 @@ main .internship .content__list .content__item .more-btn {
   font-weight: 500;
   color: #414141;
   margin-top: 15px;
-  padding: 7% 25%;
+  padding: 7% 20%;
   border: 1px solid black;
   color: black;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  main .internship .content__list .content__item .more-btn {
-    padding: 8% 28%;
+@media screen and (min-width: 700px) and (max-width: 1025px) {
+  main .experience .content__list .content__item .more-btn {
+    padding: 5% 15%;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  main .internship .content__list .content__item .more-btn {
-    padding: 20px 80px;
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .experience .content__list .content__item .more-btn {
+    padding: 20px 70px;
   }
 }
-main .internship .content__list .content__item .more-btn:hover {
+main .experience .content__list .content__item .more-btn:hover {
   background-color: #414141;
   color: white;
   cursor: pointer;
 }
-main .web {
-  padding: 80px 50px;
-}
-main .web .web__header {
+main .side-project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
+  padding: 80px 50px;
 }
-main .web .web__header .header__title {
+main .side-project .header__title {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -1705,7 +1709,7 @@ main .web .web__header .header__title {
   font-weight: 600;
   font-size: 0.9rem;
 }
-main .web .web__header .header__desc {
+main .side-project .header__desc {
   width: 80%;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.025em;
@@ -1715,46 +1719,68 @@ main .web .web__header .header__desc {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .web .web__header .header__desc {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .side-project .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
-  main .web .web__header .header__desc {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
+  main .side-project .header__desc {
     line-height: 2.1rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
-main .web .web__header .header__desc span {
+main .side-project .header__desc {
+  padding-bottom: 20px;
+}
+main .side-project .header__desc span {
   font-size: 1rem;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  main .web {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .side-project {
     padding: 80px 0px;
   }
 }
 @media screen and (min-width: 1275px) and (max-width: 3000px) {
-  main .web {
+  main .side-project {
     padding: 40px 140px;
   }
 }
-main .web .card__section {
+main .side-project .card__section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   align-self: center;
 }
-main .web .card__section img {
+main .side-project .card__section.automation {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .side-project .card__section.automation {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+main .side-project .card__section.web {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .side-project .card__section.web {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+main .side-project .card__section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-main .web .card__section .card__image {
+main .side-project .card__section .card__image {
   height: 100%;
   width: 100%;
 }
-main .web .card__section .card__content {
+main .side-project .card__section .card__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1763,12 +1789,12 @@ main .web .card__section .card__content {
   background-color: rgb(230, 240, 250);
   padding: 40px 0px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  main .web .card__section .card__content {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .side-project .card__section .card__content {
     padding: 40px 20px;
   }
 }
-main .web .card__section .card__content .card__title {
+main .side-project .card__section .card__content .card__title {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -1777,7 +1803,7 @@ main .web .card__section .card__content .card__title {
   color: #414141;
   padding-bottom: 2rem;
 }
-main .web .card__section .card__content .card__desc {
+main .side-project .card__section .card__content .card__desc {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.025em;
   text-transform: initial;
@@ -1791,59 +1817,59 @@ main .web .card__section .card__content .card__desc {
   letter-spacing: 1px;
   max-width: 400px;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .web .card__section .card__content .card__desc {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .side-project .card__section .card__content .card__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
-  main .web .card__section .card__content .card__desc {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
+  main .side-project .card__section .card__content .card__desc {
     font-size: 1.3rem;
     line-height: 2.2rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .web .card__section .card__content .card__desc {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .side-project .card__section .card__content .card__desc {
     max-width: 450px;
     font-size: 1.1rem;
     line-height: 1.8rem;
   }
 }
-main .web .card__section .wes {
+main .side-project .card__section .wes {
   border: 1px solid rgba(0, 0, 0, 0.085);
   border-bottom: none;
 }
-main .web .card__section .wes img {
+main .side-project .card__section .wes img {
   padding: 30px 0px;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
-  main .web .card__section .wes img {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
+  main .side-project .card__section .wes img {
     padding: 30px;
   }
 }
-main .web .card__section .card__img:first-child {
+main .side-project .card__section .card__img:first-child {
   padding: 30px;
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
-  main .web .card__section {
+@media screen and (min-width: 285px) and (max-width: 700px) {
+  main .side-project .card__section {
     padding: 40px 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
   }
-  main .web .card__section .order:nth-of-type(3) {
+  main .side-project .card__section .order:nth-of-type(3) {
     order: 3;
   }
-  main .web .card__section .order:nth-of-type(4) {
+  main .side-project .card__section .order:nth-of-type(4) {
     order: 2;
   }
-  main .web .card__section .order:nth-of-type(5) {
+  main .side-project .card__section .order:nth-of-type(5) {
     order: 4;
   }
-  main .web .card__section .order:nth-of-type(6) {
+  main .side-project .card__section .order:nth-of-type(6) {
     order: 5;
   }
 }
-main .web .card__section .card__content .card__title {
+main .side-project .card__section .card__content .card__title {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.025em;
   text-transform: initial;
@@ -1851,22 +1877,22 @@ main .web .card__section .card__content .card__title {
   color: #4d4c4c;
   font-size: 14px;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  main .web .card__section .card__content .card__title {
+@media screen and (min-width: 285px) and (max-width: 500px) {
+  main .side-project .card__section .card__content .card__title {
     letter-spacing: 0.5px;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1025px) {
-  main .web .card__section .card__content .card__desc {
+  main .side-project .card__section .card__content .card__desc {
     max-width: 600px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
-  main .web .card__section .card__content .card__desc {
+  main .side-project .card__section .card__content .card__desc {
     max-width: 500px;
   }
 }
-main .web .card__section .card__content .card__btn {
+main .side-project .card__section .card__content .card__btn {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -1878,14 +1904,14 @@ main .web .card__section .card__content .card__btn {
   display: flex;
   align-items: center;
 }
-main .web .card__section .card__content .card__btn div {
+main .side-project .card__section .card__content .card__btn div {
   display: flex;
   align-items: center;
 }
-main .web .card__section .card__content .card__btn:hover i {
+main .side-project .card__section .card__content .card__btn:hover i {
   transform: translateX(5px);
 }
-main .web .card__section .card__content .card__btn i {
+main .side-project .card__section .card__content .card__btn i {
   transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
   font-size: 15px;
   padding: 3px 3px 4px 10px;
@@ -1893,7 +1919,7 @@ main .web .card__section .card__content .card__btn i {
 main .interests {
   padding: 80px 50px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .interests {
     padding: 80px 0px;
   }
@@ -1913,6 +1939,7 @@ main .interests .interest__header {
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
+  width: 100%;
 }
 main .interests .interest__header .header__title {
   font-family: proxima-nova, sans-serif;
@@ -1935,16 +1962,19 @@ main .interests .interest__header .header__desc {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 285px) and (max-width: 500px) {
   main .interests .interest__header .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1025px) {
+@media screen and (min-width: 285px) and (max-width: 1025px) {
   main .interests .interest__header .header__desc {
     line-height: 2.1rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
+}
+main .interests .interest__header .header__desc {
+  width: 100%;
 }
 main .interests .photos {
   width: 100%;
@@ -1953,7 +1983,7 @@ main .interests .photos {
   grid-template-rows: 1fr 1fr;
   gap: 1px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   main .interests .photos {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -1992,7 +2022,7 @@ nav {
   padding: 0px 30px;
   margin-top: 50px;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   nav {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -2016,13 +2046,13 @@ nav .nav__column:nth-child(2) {
   border-right: 1px solid #414141;
   border-left: 1px solid #414141;
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   nav .nav__column:nth-child(2) {
     border: none;
     padding: 35px 30%;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 285px) and (max-width: 700px) {
   nav .nav__column:first-child {
     border-top: 1px solid #414141;
     border-bottom: 1px solid #414141;

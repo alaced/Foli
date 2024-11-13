@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Gaegu:wght@300;400&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://use.typekit.net/cyr0xpl.css");
-@import "_reset.scss";
-@import "_variables.scss";
-@import "_mixins.scss";
-@import "_responsive-mixins.scss";
-@import "header.scss";
-@import "gallery.scss";
-@import "motive.scss";
-@import "intro.scss";
-@import "materials.scss";
-@import "attribution.scss";
+@import "_reset";
+@import "_variables";
+@import "_mixins";
+@import "_responsive-mixins";
+@import "header";
+@import "gallery";
+@import "motive";
+@import "intro";
+@import "resources";
+@import "attribution";
 
 * {
   box-sizing: border-box;
@@ -59,6 +59,10 @@ main {
       width: 100%;
       max-height: 600px;
       object-fit: cover;
+      opacity: 0.75;
+      @include responsive("mobNtab") {
+        opacity: 1;
+      }
     }
     @include banner-css(rgb(255, 255, 255), $main-black);
     @include responsive("mobNtab") {
@@ -73,9 +77,15 @@ main {
     @include responsive("max") {
       padding: 0px 140px 0px 140px;
     }
+    .banner__title {
+      @include responsive("webToMax") {
+      -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+      }
+    }
     .banner__desc {
       @include responsive("webToMax") {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
+        -webkit-text-stroke: 0.3px black;
       }
       @include responsive("web01") {
         font-size: 2rem;
@@ -176,7 +186,7 @@ main {
       }
     }
   }
-  .internship {
+  .experience {
     padding: 80px 50px;
     width: 100%;
     .content__header {
@@ -191,6 +201,15 @@ main {
     @include responsive("mobNtab") {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068);
     }
+    .content__more-btn {
+      @include main-font;
+      padding-top: 10px;
+      cursor: pointer;
+      align-items: center;
+      div {
+        color: blue;
+      }
+    }
     .carousel-indicators li {
       background-color: black;
     }
@@ -198,13 +217,16 @@ main {
       padding-top: 40px;
       @include responsive("webToMax") {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         justify-items: center;
         width: 100%;
       }
       @include responsive("web01") {
-        gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 40px;
       }
       @include responsive("tablet") {
         padding: 50px;
@@ -262,16 +284,16 @@ main {
         .more-btn {
           @include main-font;
           margin-top: 15px;
-          padding: 7% 25%;
+          padding: 7% 20%;
           border: 1px solid black;
           color: black;
-          @include responsive("mat") {
-            padding: 8% 28%;
+          @include responsive("web01") {
+            padding: 5% 15%;
           }
           @include responsive("mobNtab") {
-            padding: 20px 80px;
+            padding: 20px 70px;
           }
-          transition: all 0.2s ease-in-out;
+          transition: all 0.1s ease-in-out;
           &:hover {
             background-color: $main-black;
             color: white;
@@ -281,14 +303,12 @@ main {
       }
     }
   }
-  .web {
-    .web__header {
-      @include header-css;
-      padding-bottom: 40px;
-      .header__desc {
-        span {
-          font-size: 1rem;
-        }
+  .side-project {
+    @include header-css;
+    .header__desc {
+      padding-bottom: 20px;
+      span {
+        font-size: 1rem;
       }
     }
     padding: 80px 50px;
@@ -300,8 +320,23 @@ main {
     }
     .card__section {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      &.automation {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 60px;
+        @include responsive("mobNtab") {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+      };
+      &.web {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        @include responsive("mobNtab") {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+      };
       align-self: center;
       @include card-css;
       .wes {
@@ -319,10 +354,10 @@ main {
           padding: 30px;
         }
       }
-      @include responsive("mobToWeb") {
+      @include responsive("mobNtab") {
         padding: 40px 0px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: auto;
         .order:nth-of-type(3) {
           order: 3;
         }
@@ -388,6 +423,10 @@ main {
     .interest__header {
       @include header-css;
       padding-bottom: 40px;
+      width: 100%;
+      .header__desc {
+        width: 100%;
+      }
     }
     .photos {
       width: 100%;
