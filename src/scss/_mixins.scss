@@ -34,12 +34,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    @include responsive("mobNtab") {
+    & { 
+      @include responsive("mobNtab") {
       position: static;
       transform: none;
       display: block;
       padding: 40px 20px;
       margin: auto;
+      }
     }
     .banner__title {
       @include main-font;
@@ -47,9 +49,11 @@
       padding-bottom: 2rem;
       font-size: 0.9rem;
       font-weight: 600;
-      @include responsive("mobNtab") {
+      & { 
+        @include responsive("mobNtab") {
         font-size: 0.8rem;
         padding-bottom: 1rem;
+        }
       }
     }
     .banner__desc {
@@ -58,16 +62,18 @@
       padding: 10px 0px;
       font-weight: 300;
       line-height: 3.1rem;
-      @include responsive("mobNtab") {
+      & { 
+        @include responsive("mobNtab") {
         font-size: 1.9rem;
         line-height: 2.4rem;
-      }
-      @include responsive("mobile") {
+        }
+        @include responsive("mobile") {
         font-size: 1.3rem;
-      }
-      @include responsive("web01") {
+        }
+        @include responsive("web01") {
         font-size: 2.2rem;
         line-height: 2.8rem;
+        }
       }
     }
     .banner__btn {
@@ -78,14 +84,16 @@
       color: $color01;
       font-weight: 500;
       border: 1px solid $color01;
+      transition: all 0.2s ease-in-out;
       &:hover {
         cursor: pointer;
         background-color: $color01;
         color: $color02;
-        transition: all 0.2s ease-in-out;
       }
-      @include responsive("mobNtab") {
+      & { 
+        @include responsive("mobNtab") {
         margin-top: 30px;
+        }
       }
     }
   }
@@ -110,7 +118,9 @@
     background-color: $blue;
     padding: 40px 0px;
     @include responsive("mobNtab") {
-      padding: 40px 20px;
+      & {
+        padding: 40px 20px;
+      }
     }
     .card__title {
       @include main-font;
@@ -126,13 +136,17 @@
       letter-spacing: 1px;
       max-width: 400px;
       @include responsive("mobToWeb") {
-        font-size: 1.3rem;
-        line-height: 2.2rem;
+        & {
+          font-size: 1.3rem;
+          line-height: 2.2rem;
+        }
       }
       @include responsive("mobile") {
-        max-width: 450px;
-        font-size: 1.1rem;
-        line-height: 1.8rem;
+        & {
+          max-width: 450px;
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+        }
       }
     }
   }
@@ -155,7 +169,7 @@
     font-size: 2.1rem;
     @include responsive("mobToWeb") {
       line-height: 2.1rem;
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -192,5 +206,6 @@
   .resu__desc {
     display: flex;
     justify-content: space-between;
+    word-break: keep-all;
   }
 }

@@ -184,12 +184,20 @@
       .sec__desc {
         padding-top: 10px;
       }
+      .skill__group {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        @include responsive("mat") {
+          // display: grid;
+          flex-wrap: wrap;
+        }
+      }
       .skill__wrapper {
         display: flex;
         justify-content: space-between;
       }
       .skill__item {
-        display: flex;
         align-items: center;
         .skill__icon {
           min-width: 70px;
@@ -205,17 +213,8 @@
             @include main-font;
             font-size: 0.6rem;
             letter-spacing: 1px;
-          }
-        }
-        .gage {
-          padding-left: 15px;
-          img {
-            width: 6px;
-            height: 30px;
-            margin: 0px 1px;
-            @include responsive("mobile") {
-              width: 6px;
-            }
+            justify-content: center;
+            margin-top: 5px;
           }
         }
       }
@@ -239,8 +238,8 @@
           transition: opacity 0.3s ease-in-out;
           position: absolute;
           width: 80px;
-          top: -25px;
-          left: -15px;
+          top: -35px;
+          left: 0px;
           font-size: 0.5rem;
           text-align: center;
           padding: 5px;
@@ -255,6 +254,8 @@
         padding: 10px 0px;
         .exp__date {
           font-size: 0.8rem;
+          align-items: end;
+          justify-items: center;
         }
         ul {
           display: flex;
@@ -273,63 +274,13 @@
         }
       }
     }
-    .interests {
-      .sec__desc {
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-        .interests__icon {
-          padding: 13px 17px;
-          margin: 0px 10px;
-          border-radius: 50%;
-          border: 1px solid rgba(0, 0, 0, 0.2);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          @include responsive("web01") {
-            margin: 3px;
-          }
-          @include responsive("mobile") {
-            margin: 0px;
-          }
-          img {
-            width: 35px;
-            padding-bottom: 5px;
-          }
-          .icon__title {
-            display: flex;
-            justify-content: center;
-            @include main-font;
-            font-size: 0.6rem;
-          }
-        }
+    .training {
+      .training_desc {
+        padding: 10px 0px;
+      }
+      .training__date {
+        font-size: 0.8rem;
       }
     }
   }
-  // position: relative;
-  // .link {
-  //   position: absolute;
-  //   bottom: 20px;
-  //   right: 20px;
-  //   width: 200px;
-  //   padding: 10px 20px;
-  //   text-align: center;
-  //   background-color: $dark-blue;
-  //   border-radius: 10px;
-  //   font-size: 0.9rem;
-  //   margin-top: 20px;
-  //   cursor: pointer;
-  //   font-weight: 600;
-  //   div {
-  //     color: white;
-  //   }
-  //   a {
-  //     all: unset;
-  //   }
-  //   span {
-  //     font-size: 0.7rem;
-  //     font-weight: 400;
-  //     color: white;
-  //   }
-  // }
 }
