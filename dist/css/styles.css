@@ -151,7 +151,7 @@ table {
   width: 100%;
   z-index: 100;
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   .header {
     padding: 5px 17px;
     font-size: 10px;
@@ -174,7 +174,7 @@ table {
   width: 90px;
   height: 90px;
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   .header .logo {
     width: 50px;
     height: 50px;
@@ -227,7 +227,7 @@ table {
   font-size: 10px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   .shrinkHeader {
     padding: 5px 17px;
   }
@@ -248,7 +248,7 @@ table {
   transition: 0.1s ease-in-out;
   padding: 0px 5px !important;
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   .shrinkImg {
     padding: 5px !important;
   }
@@ -289,7 +289,7 @@ table {
   letter-spacing: 2px;
   cursor: pointer;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .menu .menu__item {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -305,7 +305,7 @@ table {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .gallery {
     padding: 40px 0px 140px 0px;
   }
@@ -341,12 +341,12 @@ table {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .gallery .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   .gallery .header__desc {
     line-height: 2.1rem;
     font-size: 1.8rem;
@@ -374,7 +374,7 @@ table {
 .motive {
   padding: 20px 40px;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .motive {
     padding: 20px 20px;
   }
@@ -403,7 +403,7 @@ table {
     padding: 30px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .motive .motive__desc {
     width: 100%;
     padding: 0px;
@@ -415,7 +415,7 @@ table {
   font-size: 1.7rem;
   padding: 20px 0px 5px 0px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .motive .motive__desc .motive__title {
     font-size: 1.5rem;
   }
@@ -424,7 +424,7 @@ table {
   font-size: 1rem;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .motive .motive__desc .motive__subtitle {
     font-size: 0.8rem;
   }
@@ -437,7 +437,7 @@ table {
   margin: 20px auto;
   object-fit: cover;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .motive .motive__desc img {
     margin: 15px auto;
     max-height: 300px;
@@ -462,12 +462,12 @@ table {
   font-family: "Gaegu", cursive;
   line-height: 2.8rem;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .motive .motive__desc .article span {
     font-size: 1.4rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .motive .motive__desc .article {
     padding: 30px 0px;
   }
@@ -492,10 +492,12 @@ table {
   margin: 10px 50px 50px 50px;
   padding-bottom: 50px;
   box-shadow: 0 6px 9px 3px rgba(0, 0, 0, 0.1);
+  max-width: 1275px;
 }
 @media screen and (min-width: 1275px) and (max-width: 3000px) {
   .resume {
-    margin: 50px 140px;
+    margin: 50px auto;
+    width: 80%;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
@@ -504,7 +506,7 @@ table {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .resume {
     padding-bottom: 25px;
     margin: 50px 0px;
@@ -524,13 +526,13 @@ table {
   background-color: #bedcf4;
   padding: 50px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__title {
     flex-direction: column;
     padding: 30px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .resume .resume__title {
     padding: 30px 0px 0px 0px;
   }
@@ -543,12 +545,12 @@ table {
 .resume .resume__title .title__column {
   display: flex;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__title .title__column div {
     width: 100%;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .resume .resume__title .title__column:last-child {
     display: block;
   }
@@ -564,7 +566,7 @@ table {
 .resume .resume__title .title__column .name span {
   font-size: 1.5rem;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__title .title__column .name {
     padding-bottom: 30px;
     font-size: 1.65rem;
@@ -573,7 +575,7 @@ table {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .resume .resume__title .title__column .name {
     align-items: center;
   }
@@ -598,7 +600,7 @@ table {
   font-size: 0.7rem;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .resume .resume__title .title__column .contact__wrapper .contact {
     padding-right: 0px;
     border: none;
@@ -632,7 +634,7 @@ table {
   border-radius: 50%;
   object-fit: cover;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__title .selfie img {
     width: 90px;
     height: 90px;
@@ -644,7 +646,7 @@ table {
     height: 100px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .resume .resume__title .selfie {
     padding: 30px 0px;
   }
@@ -662,7 +664,7 @@ table {
     gap: 80px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__row {
     grid-template-columns: 1fr;
     gap: 80px;
@@ -692,12 +694,12 @@ table {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__row .section .sec__title {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__row {
     font-size: 0.7rem;
   }
@@ -708,7 +710,7 @@ table {
   font-size: 1.1rem;
   padding-bottom: 5px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__row .resu__title {
     font-size: 0.9rem;
   }
@@ -744,7 +746,7 @@ table {
   justify-content: center;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__row .skill .skill__group {
     flex-wrap: wrap;
   }
@@ -834,9 +836,10 @@ table {
 }
 
 .resources {
+  max-width: 1600px;
   padding: 40px 50px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resources {
     padding: 40px 0px;
   }
@@ -849,6 +852,8 @@ table {
 @media screen and (min-width: 1275px) and (max-width: 3000px) {
   .resources {
     padding: 40px 140px;
+    margin: 0px auto;
+    width: 70%;
   }
 }
 .resources .section {
@@ -861,13 +866,13 @@ table {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-@media screen and (min-width: 285px) and (max-width: 900px) {
+@media screen and (min-width: 320px) and (max-width: 900px) {
   .resources .section {
     grid-template-rows: 0.6fr 1fr;
     grid-template-columns: 1fr;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .resources .section {
     grid-template-rows: 0.3fr 1fr;
   }
@@ -885,7 +890,7 @@ table {
   font-size: 1.4rem;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resources .section .sec__info .sec__title {
     font-size: 1.1rem;
   }
@@ -899,7 +904,7 @@ table {
   word-wrap: break-word;
   font-size: 0.85rem;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resources .section .sec__info .sec__desc {
     font-size: 0.8rem;
   }
@@ -915,7 +920,7 @@ table {
 .resources .section .sec__content .card {
   padding: 25px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resources .section .sec__content .card {
     padding: 20px;
   }
@@ -943,7 +948,7 @@ table {
 .resources .section .sec__content .card .card__content:hover .card__title {
   text-shadow: -2px -2px 0 rgb(230, 230, 230);
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .resources .section .sec__content .card .card__content {
     padding: 20px 5px;
   }
@@ -982,7 +987,7 @@ table {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 0.3fr 1fr;
 }
-@media screen and (min-width: 285px) and (max-width: 900px) {
+@media screen and (min-width: 320px) and (max-width: 900px) {
   .resources .test {
     grid-template-rows: 0.3fr 0.6fr 1fr;
     grid-template-columns: 1fr;
@@ -1006,7 +1011,7 @@ table {
   content: "\f078";
   grid-column: span 2;
 }
-@media screen and (min-width: 285px) and (max-width: 900px) {
+@media screen and (min-width: 320px) and (max-width: 900px) {
   .resources .test::before {
     grid-column: span 1;
   }
@@ -1055,7 +1060,7 @@ body {
   width: 100%;
   padding-top: 150px;
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   body {
     padding-top: 20px;
   }
@@ -1063,8 +1068,10 @@ body {
 
 main {
   width: 100%;
+  max-width: 1600px;
+  margin: 0px auto;
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main {
     padding: 0px;
     margin-top: 30px;
@@ -1081,7 +1088,7 @@ main .banner {
   padding: 0px 50px;
   margin-bottom: 80px;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .banner {
     letter-spacing: 0.5px;
   }
@@ -1092,7 +1099,7 @@ main .banner img {
   object-fit: cover;
   opacity: 0.75;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner img {
     opacity: 1;
   }
@@ -1108,7 +1115,7 @@ main .banner .banner__content {
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content {
     position: static;
     transform: none;
@@ -1129,7 +1136,7 @@ main .banner .banner__content .banner__title {
   font-size: 0.9rem;
   font-weight: 600;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__title {
     font-size: 0.8rem;
     padding-bottom: 1rem;
@@ -1142,13 +1149,13 @@ main .banner .banner__content .banner__desc {
   font-weight: 300;
   line-height: 3.1rem;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.9rem;
     line-height: 2.4rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.3rem;
   }
@@ -1179,12 +1186,12 @@ main .banner .banner__content .banner__btn:hover {
   background-color: rgb(255, 255, 255);
   color: #414141;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__btn {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner {
     padding: 0px;
     position: static;
@@ -1202,7 +1209,7 @@ main .banner .banner__content .banner__btn:hover {
     text-align: center;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content {
     position: static;
     transform: none;
@@ -1211,7 +1218,7 @@ main .banner .banner__content .banner__btn:hover {
     margin: auto;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__title {
     font-family: proxima-nova, sans-serif;
     letter-spacing: 2.2px;
@@ -1225,13 +1232,13 @@ main .banner .banner__content .banner__btn:hover {
     font-weight: 600;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__title {
     font-size: 0.8rem;
     padding-bottom: 1rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__desc {
     color: #414141;
     font-size: 2.7rem;
@@ -1240,24 +1247,24 @@ main .banner .banner__content .banner__btn:hover {
     line-height: 3.1rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.9rem;
     line-height: 2.4rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 500px) {
   main .banner .banner__content .banner__desc {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 700px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 700px) and (max-width: 1025px) {
   main .banner .banner__content .banner__desc {
     font-size: 2.2rem;
     line-height: 2.8rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__btn {
     font-family: proxima-nova, sans-serif;
     letter-spacing: 2.2px;
@@ -1279,7 +1286,7 @@ main .banner .banner__content .banner__btn:hover {
     color: white;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) {
   main .banner .banner__content .banner__btn {
     margin-top: 30px;
   }
@@ -1327,14 +1334,14 @@ main .banner .motive {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .banner .motive {
     margin: 55px 0px 0px 0px;
     font-size: 0.8rem;
     padding: 50px 30px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .banner .motive {
     font-size: 0.7rem;
   }
@@ -1379,7 +1386,7 @@ main .intro .card__content {
   background-color: rgb(230, 240, 250);
   padding: 40px 0px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .intro .card__content {
     padding: 40px 20px;
   }
@@ -1407,18 +1414,18 @@ main .intro .card__content .card__desc {
   letter-spacing: 1px;
   max-width: 400px;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .intro .card__content .card__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main .intro .card__content .card__desc {
     font-size: 1.3rem;
     line-height: 2.2rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .intro .card__content .card__desc {
     max-width: 450px;
     font-size: 1.1rem;
@@ -1429,7 +1436,7 @@ main .intro .card__title {
   font-weight: 600 !important;
   font-size: 12px !important;
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main .intro {
     padding: 80px 0px;
     grid-template-columns: 1fr;
@@ -1452,7 +1459,7 @@ main .intro .card__title {
     padding: 80px 140px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .intro .card__desc {
     font-size: 1.3rem !important;
   }
@@ -1474,7 +1481,7 @@ main .intro button {
   transition: all 0.3s ease-in-out;
   transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .intro button {
     width: 270px;
   }
@@ -1524,12 +1531,12 @@ main .experience .content__header .header__desc {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .experience .content__header .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main .experience .content__header .header__desc {
     line-height: 2.1rem;
     font-size: 1.8rem;
@@ -1540,12 +1547,12 @@ main .experience .content__header .header__desc {
     padding: 80px 140px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .experience {
     padding: 80px 40px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .experience {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068);
   }
@@ -1592,7 +1599,7 @@ main .experience .content__list {
     padding: 50px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .experience .content__list {
     padding: 20px 0px;
   }
@@ -1632,7 +1639,7 @@ main .experience .content__list .content__item .content__desc {
     padding-bottom: 10px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .experience .content__list .content__item .content__desc {
     padding-bottom: 20px;
   }
@@ -1655,7 +1662,7 @@ main .experience .content__list .content__item .content__name {
   font-size: 1.2rem;
   padding: 10px 0px;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .experience .content__list .content__item .content__name {
     letter-spacing: 0.5px;
   }
@@ -1683,7 +1690,7 @@ main .experience .content__list .content__item .more-btn {
     padding: 5% 15%;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .experience .content__list .content__item .more-btn {
     padding: 20px 70px;
   }
@@ -1720,12 +1727,12 @@ main .side-project .header__desc {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .side-project .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main .side-project .header__desc {
     line-height: 2.1rem;
     font-size: 1.8rem;
@@ -1737,7 +1744,7 @@ main .side-project .header__desc {
 main .side-project .header__desc span {
   font-size: 1rem;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .side-project {
     padding: 80px 0px;
   }
@@ -1756,7 +1763,7 @@ main .side-project .card__section.automation {
   grid-template-rows: 1fr;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .side-project .card__section.automation {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1766,7 +1773,7 @@ main .side-project .card__section.web {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .side-project .card__section.web {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1790,7 +1797,7 @@ main .side-project .card__section .card__content {
   background-color: rgb(230, 240, 250);
   padding: 40px 0px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .side-project .card__section .card__content {
     padding: 40px 20px;
   }
@@ -1818,18 +1825,18 @@ main .side-project .card__section .card__content .card__desc {
   letter-spacing: 1px;
   max-width: 400px;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .side-project .card__section .card__content .card__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main .side-project .card__section .card__content .card__desc {
     font-size: 1.3rem;
     line-height: 2.2rem;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .side-project .card__section .card__content .card__desc {
     max-width: 450px;
     font-size: 1.1rem;
@@ -1843,7 +1850,7 @@ main .side-project .card__section .wes {
 main .side-project .card__section .wes img {
   padding: 30px 0px;
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main .side-project .card__section .wes img {
     padding: 30px;
   }
@@ -1851,7 +1858,7 @@ main .side-project .card__section .wes img {
 main .side-project .card__section .card__img:first-child {
   padding: 30px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .side-project .card__section {
     padding: 40px 0px;
     grid-template-columns: 1fr;
@@ -1878,7 +1885,7 @@ main .side-project .card__section .card__content .card__title {
   color: #4d4c4c;
   font-size: 14px;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .side-project .card__section .card__content .card__title {
     letter-spacing: 0.5px;
   }
@@ -1920,7 +1927,7 @@ main .side-project .card__section .card__content .card__btn i {
 main .interests {
   padding: 80px 50px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .interests {
     padding: 80px 0px;
   }
@@ -1963,12 +1970,12 @@ main .interests .interest__header .header__desc {
   text-align: center;
   font-size: 2.1rem;
 }
-@media screen and (min-width: 285px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   main .interests .interest__header .header__desc {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 1025px) {
+@media screen and (min-width: 320px) and (max-width: 1025px) {
   main .interests .interest__header .header__desc {
     line-height: 2.1rem;
     font-size: 1.8rem;
@@ -1984,7 +1991,7 @@ main .interests .photos {
   grid-template-rows: 1fr 1fr;
   gap: 1px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   main .interests .photos {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -2023,7 +2030,7 @@ nav {
   padding: 0px 30px;
   margin-top: 50px;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   nav {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -2047,13 +2054,13 @@ nav .nav__column:nth-child(2) {
   border-right: 1px solid #414141;
   border-left: 1px solid #414141;
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   nav .nav__column:nth-child(2) {
     border: none;
     padding: 35px 30%;
   }
 }
-@media screen and (min-width: 285px) and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   nav .nav__column:first-child {
     border-top: 1px solid #414141;
     border-bottom: 1px solid #414141;

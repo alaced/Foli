@@ -3,8 +3,10 @@
   margin: 10px 50px 50px 50px;
   padding-bottom: 50px;
   box-shadow: 0 6px 9px 3px rgba(0, 0, 0, 0.1);
+  max-width: 1275px;
   @include responsive("max") {
-    margin: 50px 140px;
+    margin: 50px auto;
+    width: 80%;
   }
   @include responsive("tablet") {
     padding-bottom: 30px;
@@ -109,7 +111,6 @@
       }
     }
     .selfie {
-      // display: none;
       display: flex;
       justify-content: center;
       padding-left: 30px;
@@ -188,8 +189,7 @@
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
-        @include responsive("mat") {
-          // display: grid;
+        @include responsive("mobNtab") {
           flex-wrap: wrap;
         }
       }
