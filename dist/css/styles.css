@@ -496,6 +496,7 @@ table {
 }
 @media screen and (min-width: 1275px) and (max-width: 3000px) {
   .resume {
+    max-width: 1400px;
     margin: 50px auto;
     width: 80%;
   }
@@ -655,25 +656,22 @@ table {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
   padding: 30px 50px;
-  gap: 90px;
+  gap: 80px;
   font-size: 0.8rem;
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
   .resume .resume__row {
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 700px) {
   .resume .resume__row {
     grid-template-columns: 1fr;
-    gap: 80px;
     padding: 40px 30px;
   }
 }
 @media screen and (min-width: 1275px) and (max-width: 3000px) {
   .resume .resume__row {
-    gap: 120px;
     padding: 30px 70px;
   }
 }
@@ -730,7 +728,8 @@ table {
 }
 .resume .resume__row .profile .sec__desc {
   padding-top: 10px;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 .resume .resume__row .edu .edu__desc {
   padding: 10px 0px;
@@ -810,6 +809,8 @@ table {
 }
 .resume .resume__row .experience .exp__desc {
   padding: 10px 0px;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 .resume .resume__row .experience .exp__desc .exp__date {
   font-size: 0.8rem;
@@ -836,7 +837,7 @@ table {
 }
 
 .resources {
-  max-width: 1600px;
+  max-width: 1400px;
   padding: 40px 50px;
 }
 @media screen and (min-width: 320px) and (max-width: 700px) {
@@ -849,7 +850,13 @@ table {
     padding: 50px 0px;
   }
 }
-@media screen and (min-width: 1275px) and (max-width: 3000px) {
+@media screen and (min-width: 1275px) and (max-width: 1800px) {
+  .resources {
+    margin: 0px auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 3000px) {
   .resources {
     padding: 40px 140px;
     margin: 0px auto;

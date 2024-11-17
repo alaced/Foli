@@ -7,6 +7,7 @@ $maxWeb: 1025px;
 $minScreen: 1025px;
 $maxScreen: 1275px;
 $minMax: 1275px;
+$maxMid: 1800px;
 $maxMax: 3000px;
 $matMin: 700px;
 $matMax: 900px;
@@ -50,6 +51,15 @@ $maxPad: 1025px;
     @media screen and (min-width: $matMin) and (max-width: $matMax) {
       @content;
     }
+  } @else if $device == "midMin" {
+    @media screen and (min-width: $minMax) and (max-width: $maxMid) {
+      @content;
+    }
+  }
+    @else if $device == "midMax" {
+      @media screen and (min-width: $maxMid) and (max-width: $maxMax) {
+        @content;
+      } 
   } @else if $device == "mobToMat" {
     @media screen and (min-width: $minMobile) and (max-width: $matMax) {
       @content;
