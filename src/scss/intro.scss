@@ -5,6 +5,7 @@
   box-shadow: 0 6px 9px 3px rgba(0, 0, 0, 0.1);
   max-width: 1275px;
   @include responsive("max") {
+    max-width: 1400px;
     margin: 50px auto;
     width: 80%;
   }
@@ -137,18 +138,15 @@
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     padding: 30px 50px;
-    gap: 90px;
+    gap: 80px;
     @include responsive("web01") {
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
     }
     @include responsive("mobNtab") {
       grid-template-columns: 1fr;
-      gap: 80px;
       padding: 40px 30px;
     }
     @include responsive("max") {
-      gap: 120px;
       padding: 30px 70px;
     }
     .section {
@@ -170,7 +168,8 @@
     .profile {
       .sec__desc {
         padding-top: 10px;
-        line-height: 1.3rem;
+        line-height: 1.5rem;
+        font-size: 0.9rem;
       }
     }
     .edu {
@@ -252,6 +251,8 @@
     .experience {
       .exp__desc {
         padding: 10px 0px;
+        line-height: 1.5rem;
+        font-size: 0.9rem;
         .exp__date {
           font-size: 0.8rem;
           align-items: end;
